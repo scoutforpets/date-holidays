@@ -5499,6 +5499,53 @@ holidays:
       12-31:
         _name: 12-31
         type: observance
+  # @source https://en.wikipedia.org/wiki/Public_holidays_in_Somalia
+  SO:
+    names:
+      so: Jamhuuriyadda Federaalka Soomaaliya
+      ar: جمهورية الصومال الفدرالية
+      en: Somalia
+    dayoff: ?
+    langs:
+      - so
+      - ar
+      - en
+    zones:
+      - Africa/Nairobi
+    days:
+      01-01:
+        _name: 01-01
+      05-01:
+        _name: 05-01
+      06-26:
+        name:
+          ar: استقلال الصومال البريطاني
+          en: Independence of British Somaliland
+      07-01:
+        _name: Independence Day
+      10 Muharram:
+        _name: 10 Muharram
+      12 Rabi al-awwal:
+        _name: 12 Rabi al-awwal
+      1 Shawwal:
+        _name: 1 Shawwal
+      10 Dhu al-Hijjah:
+        _name: 10 Dhu al-Hijjah
+    states:
+      som:
+        name: Somaliland
+        days:
+          01-01: false
+          05-18 +2d:
+            name:
+              en: Restoration of Somaliland Sovereignty
+          07-01: false
+          1 Muharram:
+            _name: 1 Muharram
+          10 Muharram: false
+          27 Rajab:
+            _name: 27 Rajab
+
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_South_Sudan
   SS:
     names:

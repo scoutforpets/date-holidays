@@ -27,7 +27,7 @@
     "pack": "npm run clean && npm i && npm run yaml && npm run lint && npm test && npm pack",
     "yaml": "node build/yaml2json.js",
     "cover": "istanbul cover _mocha --report lcov --report text -- -R dot --check-leaks test/*.mocha.js",
-    "lint": "eslint --quiet '**/*.js'",
+    "lint": "eslint --cache --quiet '**/*.js'",
     "watch": "watch-run -p data/*.yaml npm run yaml",
     "clean": "rimraf coverage node_modules"
   },

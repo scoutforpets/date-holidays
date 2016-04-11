@@ -7786,6 +7786,73 @@
         }
       }
     },
+    "SO": {
+      "names": {
+        "so": "Jamhuuriyadda Federaalka Soomaaliya",
+        "ar": "جمهورية الصومال الفدرالية",
+        "en": "Somalia"
+      },
+      "dayoff": null,
+      "null": null,
+      "langs": [
+        "so",
+        "ar",
+        "en"
+      ],
+      "zones": [
+        "Africa/Nairobi"
+      ],
+      "days": {
+        "01-01": {
+          "_name": "01-01"
+        },
+        "05-01": {
+          "_name": "05-01"
+        },
+        "06-26": {
+          "name": {
+            "ar": "استقلال الصومال البريطاني",
+            "en": "Independence of British Somaliland"
+          }
+        },
+        "07-01": {
+          "_name": "Independence Day"
+        },
+        "10 Muharram": {
+          "_name": "10 Muharram"
+        },
+        "12 Rabi al-awwal": {
+          "_name": "12 Rabi al-awwal"
+        },
+        "1 Shawwal": {
+          "_name": "1 Shawwal"
+        },
+        "10 Dhu al-Hijjah": {
+          "_name": "10 Dhu al-Hijjah"
+        }
+      },
+      "states": {
+        "som": {
+          "name": "Somaliland",
+          "days": {
+            "01-01": false,
+            "05-18 +2d": {
+              "name": {
+                "en": "Restoration of Somaliland Sovereignty"
+              }
+            },
+            "07-01": false,
+            "1 Muharram": {
+              "_name": "1 Muharram"
+            },
+            "10 Muharram": false,
+            "27 Rajab": {
+              "_name": "27 Rajab"
+            }
+          }
+        }
+      }
+    },
     "SS": {
       "names": {
         "en": "South Sudan"
@@ -9877,6 +9944,7 @@
       "name": {
         "en": "New Year's Day",
         "am": "እንቁጣጣሽ",
+        "ar": "عيد رأس السنة",
         "bg": "Нова Година",
         "bs": "Novogodisnji dan",
         "ca": "Any nou",
@@ -9963,6 +10031,7 @@
     "05-01": {
       "name": {
         "en": "Labour Day",
+        "ar": "يوم العمال",
         "bg": "Ден на труда",
         "bs": "Radni dan",
         "cz": "Svátek práce",
@@ -10390,15 +10459,23 @@
     "1 Muharram": {
       "name": {
         "en": "Islamic New Year",
+        "ar": "رأس السنة الهجرية",
         "bs": "Nova hidžretska godina",
         "hr": "Nova hidžretska godina",
         "sq": "Viti i Ri hixhri"
+      }
+    },
+    "10 Muharram": {
+      "name": {
+        "en": "Day of Ashura",
+        "ar": "عاشوراء‎"
       }
     },
     "1 Shawwal": {
       "name": {
         "en": "End of Ramadan (Eid al-Fitr)",
         "am": "ዒድ አል ፈጥር",
+        "ar": "عيد الفطر",
         "bs": "Ramazanski bajram",
         "de": "Zuckerfest",
         "fr": "Fête de fin du Ramadan",
@@ -10412,6 +10489,7 @@
       "name": {
         "en": "Feast of the Sacrifice (Eid al-Adha)",
         "am": "ዒድ አል አድሐ",
+        "ar": "عيد الأضحى",
         "bs": "Kurbanski bajram",
         "de": "Opferfest",
         "fr": "Fête du mouton",
@@ -10423,22 +10501,27 @@
     },
     "12 Rabi al-awwal": {
       "name": {
-        "en": "Mawlid",
+        "en": "Birthday of Muhammad (Mawlid)",
         "am": "መውሊድ",
+        "ar": "المولد النبويّ",
         "bs": "Mevlud",
+        "fr": "Mawlid",
         "sq": "Mevludi"
       }
     },
     "27 Rajab": {
       "name": {
         "en": "Laylat al-Mi'raj",
+        "ar": "الإسراء والمعراج‎",
         "bs": "Lejletul Mi'radž",
-        "sq": "Nata e Miraxhit"
+        "sq": "Nata e Miraxhit",
+        "tr": "Miraç Gecesi"
       }
     },
     "15 Shaban": {
       "name": {
         "en": "Laylat al-Bara'at",
+        "ar": "ليلة البراءة",
         "bs": "Lejletul berat",
         "sq": "Nata e Beratit"
       }
@@ -10447,6 +10530,7 @@
       "name": {
         "en": "First day of Ramadan",
         "am": "ረመዳን",
+        "ar": "اليوم الأول من رمضان",
         "bs": "Prvi dan posta",
         "sq": "Dita e parë e agjërimit"
       }
@@ -10454,6 +10538,7 @@
     "27 Ramadan": {
       "name": {
         "en": "Laylat al-Qadr",
+        "ar": "لیلة القدر‎",
         "bs": "Lejletul kadr",
         "sq": "Nata e Kadrit"
       }
@@ -10525,6 +10610,7 @@
     "Independence Day": {
       "name": {
         "en": "Independence Day",
+        "ar": "عيد الاستقلال",
         "bg": "Ден на независимостта",
         "bs": "Dan nezavisnosti",
         "de": "Unabhängigkeitstag",

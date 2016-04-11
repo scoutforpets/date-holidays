@@ -12,6 +12,7 @@ names:
     name:
       en: New Year's Day
       am: እንቁጣጣሽ
+      ar: 'عيد رأس السنة'
       bg: Нова Година
       bs: Novogodisnji dan
       ca: Any nou
@@ -90,6 +91,7 @@ names:
   05-01:
     name:
       en: Labour Day
+      ar: 'يوم العمال'
       bg: Ден на труда
       bs: Radni dan
       cz: Svátek práce
@@ -477,13 +479,19 @@ names:
   1 Muharram: # Islamic New Year
     name:
       en: Islamic New Year
+      ar: 'رأس السنة الهجرية'
       bs: Nova hidžretska godina
       hr: Nova hidžretska godina
       sq: Viti i Ri hixhri
+  10 Muharram: # Day of Ashura
+    name:
+      en: Day of Ashura
+      ar: 'عاشوراء‎'
   1 Shawwal:  # End of Ramadan
     name:
       en: End of Ramadan (Eid al-Fitr)
       am: ዒድ አል ፈጥር
+      ar: 'عيد الفطر'
       bs: Ramazanski bajram
       de: Zuckerfest
       fr: Fête de fin du Ramadan
@@ -495,6 +503,7 @@ names:
     name:
       en: Feast of the Sacrifice (Eid al-Adha)
       am: ዒድ አል አድሐ
+      ar: 'عيد الأضحى'
       bs: Kurbanski bajram
       de: Opferfest
       fr: Fête du mouton
@@ -502,31 +511,38 @@ names:
       sq: Kurban bajrami
       tr: Kurban Bayramı
       sw: Idd-ul-Azha
-  12 Rabi al-awwal: # Mawlid
+  12 Rabi al-awwal: # Birthday of Muhammad (Mawlid)
     name:
-      en: Mawlid
+      en: Birthday of Muhammad (Mawlid)
       am: መውሊድ
+      ar: 'المولد النبويّ'
       bs: Mevlud
+      fr: Mawlid
       sq: Mevludi
-  27 Rajab:   # Laylat al-Mi'raj
+  27 Rajab:   # Laylat al-Mi'raj (Muhammad's Ascension to Heaven)
     name:
       en: Laylat al-Mi'raj
+      ar: 'الإسراء والمعراج‎'
       bs: Lejletul Mi'radž
       sq: Nata e Miraxhit
-  15 Shaban:  # Laylat al-Bara'at
+      tr: Miraç Gecesi
+  15 Shaban:  # Laylat al-Bara'at (Bara'at Night)
     name:
       en: Laylat al-Bara'at
+      ar: 'ليلة البراءة'
       bs: Lejletul berat
       sq: Nata e Beratit
   1 Ramadan:  # First day of Ramadan
     name:
       en: First day of Ramadan
       am: ረመዳን
+      ar: 'اليوم الأول من رمضان'
       bs: Prvi dan posta
       sq: Dita e parë e agjërimit
-  27 Ramadan: # Laylat al-Qadr
+  27 Ramadan: # Laylat al-Qadr (Night of Power)
     name:
       en: Laylat al-Qadr
+      ar: 'لیلة القدر‎'
       bs: Lejletul kadr
       sq: Nata e Kadrit
 
@@ -585,6 +601,7 @@ names:
   Independence Day:
     name:
       en: Independence Day
+      ar: عيد الاستقلال
       bg: Ден на независимостта
       bs: Dan nezavisnosti
       de: Unabhängigkeitstag
