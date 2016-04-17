@@ -87,8 +87,8 @@
     "date": "2017-11-20 00:00:00",
     "start": "2017-11-19T23:00:00.000Z",
     "end": "2017-11-20T23:00:00.000Z",
-    "substitute": true,
     "name": "La Fête du Prince (jour substitut)",
+    "substitute": true,
     "type": "public"
   },
   {

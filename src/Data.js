@@ -1,12 +1,7 @@
-/**
- * @copyright 2015 (c) commenthol
- * @license ISC
- */
-
 'use strict'
 
-var _ = require('lodash')
-var _data = require('../data/holidays.json')
+const _ = require('lodash')
+const _data = require('../data/holidays.json')
 
 /**
  * Handler for holiday data provided in the Json file
@@ -14,31 +9,29 @@ var _data = require('../data/holidays.json')
  * @param {Object} [opts]
  * @param {Object} opts.optional - include optional holidays
  */
-function Data (country, state, region, data) {
-  if (!(this instanceof Data)) {
-    return new Data(country, state, region, data)
-  }
-  if (typeof region === 'object') {
-    data = region
-    region = null
-  } else if (typeof state === 'object') {
-    data = state
-    state = null
-  }
+class Data {
+  constructor (country, state, region, data) {
+    if (!(this instanceof Data)) {
+      return new Data(country, state, region, data)
+    }
+    if (typeof region === 'object') {
+      data = region
+      region = null
+    } else if (typeof state === 'object') {
+      data = state
+      state = null
+    }
 
-  this.opts = Data.splitName(country, state, region)
-  this.data = data || _data
-}
-module.exports = Data
-
-Data.prototype = {
+    this.opts = Data.splitName(country, state, region)
+    this.data = data || _data
+  }
 
   /**
    * get all countries from the data
    * @param {String} lang - Iso-639 shortcode
    * @return {Object} shortcode-name value pairs. E.g. `{ AT: 'Österreich', ... }`
    */
-  getCountries: function (lang) {
+  getCountries (lang) {
     var o = {}
     var countries = this.data.holidays
     Object.keys(countries).forEach(function (k) {
@@ -49,14 +42,14 @@ Data.prototype = {
       o[k] = countries[k].names[l] || k
     })
     return o
-  },
+  }
 
   /**
    * get all states for a given country from the data
    * @param {String} country
    * @return {Object} shortcode-name value pairs. E.g. `{ b: 'Burgenland', ... }`
    */
-  getStates: function (country) {
+  getStates (country) {
     country = country.toUpperCase()
     var o = {}
     var states = _.get(this.data, ['holidays', country, 'states']) || _.get(this.data, ['holidays', country, 'regions'])
@@ -66,7 +59,7 @@ Data.prototype = {
       })
       return o
     }
-  },
+  }
 
   /**
    * get all regions for a given country/ state from the data
@@ -74,7 +67,7 @@ Data.prototype = {
    * @param {String} state
    * @return {Object} shortcode-name value pairs.
    */
-  getRegions: function (country, state) {
+  getRegions (country, state) {
     var tmp
     if ((tmp = Data.splitName(country, state))) {
       state = tmp.state
@@ -90,37 +83,37 @@ Data.prototype = {
       })
       return o
     }
-  },
+  }
 
   /**
    * get languages for selected country, state, region
    * @return {Array} containing ISO 639-1 language shortcodes
    */
-  getLanguages: function () {
+  getLanguages () {
     return this._getValue('langs')
-  },
+  }
 
   /**
    * get default day off as weekday
    * @return {String} weekday of day off
    */
-  getDayOff: function () {
+  getDayOff () {
     return this._getValue('dayoff')
-  },
+  }
 
   /**
    * get timezones for country, state, region
    * @return {Array} of {String}s containing the timezones
    */
-  getTimezones: function () {
+  getTimezones () {
     return this._getValue('zones')
-  },
+  }
 
   /**
    * get list of holidays for country/ state/ region
    * @return {Object} holidayname <-> unparsed rule or date pairs
    */
-  getHolidays: function () {
+  getHolidays () {
     var self = this
     var tmp
     var o
@@ -154,15 +147,15 @@ Data.prototype = {
       })
     }
     return o
-  },
+  }
 
   /**
    * get name for substitute name
    * @return {Object} translations of substitute day names
    */
-  getSubstitueNames: function () {
+  getSubstitueNames () {
     return _.get(this.data, ['names', 'substitutes', 'name'])
-  },
+  }
 
   /**
    * helper to assign objects based on properties
@@ -171,7 +164,7 @@ Data.prototype = {
    * @param {Object} obj - input obj
    * @return {Object}
    */
-  _assign: function (out, obj) {
+  _assign (out, obj) {
     var days
     if (obj._days) { // resolve reference
       days = _.assign({}, _.get(this.data, ['holidays'].concat(obj._days, 'days')), obj.days)
@@ -192,7 +185,7 @@ Data.prototype = {
       })
     }
     return out
-  },
+  }
 
   /**
    * get a object from the data tree
@@ -200,13 +193,14 @@ Data.prototype = {
    * @param {String} key - key to look at
    * @return {Object} return object
    */
-  _getValue: function (key) {
+  _getValue (key) {
     return (
       _.get(this.data, ['holidays', this.opts.country, 'states', this.opts.state, key]) ||
       _.get(this.data, ['holidays', this.opts.country, key])
     )
   }
 }
+module.exports = Data
 
 // static functions
 /**

@@ -2,8 +2,6 @@
  * sample script to show usage of module
  */
 
-'use strict'
-
 if (require.main === module) {
   var Holidays = require('..')
   var hd = new Holidays()

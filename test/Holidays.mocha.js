@@ -1,11 +1,11 @@
-'use strict'
-
 /* global describe, it */
 
-var assert = require('assert')
-var Holidays = require('..')
+'use strict'
 
-var toIso = require('./lib/helper').toIso
+const assert = require('assert')
+const Holidays = require('../src')
+const toIso = require('./lib/helper').toIso
+const moveToTimezone = require('./lib/helper').moveToTimezone
 
 describe('#Holidays', function () {
   describe('can query', function () {
@@ -219,7 +219,7 @@ describe('#Holidays', function () {
       var hd = new Holidays('at')
       var res = hd.getHolidays()[0]
       var str = (new Date()).getFullYear() + '-01-01 00:00:00'
-      var exp = hd.moveToTimezone(new Date(str), 'Europe/Vienna')
+      var exp = moveToTimezone(new Date(str), 'Europe/Vienna')
       assert.equal(toIso(res.start), toIso(exp))
     })
 
@@ -227,7 +227,7 @@ describe('#Holidays', function () {
       var hd = new Holidays('at')
       var res = hd.getHolidays('2016')[0]
       var str = '2016-01-01 00:00:00'
-      var exp = hd.moveToTimezone(new Date(str), 'Europe/Vienna')
+      var exp = moveToTimezone(new Date(str), 'Europe/Vienna')
       assert.equal(toIso(res.start), toIso(exp))
     })
 
@@ -235,7 +235,7 @@ describe('#Holidays', function () {
       var hd = new Holidays('at')
       var res = hd.getHolidays(2016)[0]
       var str = '2016-01-01 00:00:00'
-      var exp = hd.moveToTimezone(new Date(str), 'Europe/Vienna')
+      var exp = moveToTimezone(new Date(str), 'Europe/Vienna')
       assert.equal(toIso(res.start), toIso(exp))
     })
 
@@ -274,7 +274,7 @@ describe('#Holidays', function () {
       res.forEach(function (p) {
         tmp[p.name] = toIso(p.start)
       })
-      // ~ console.log(tmp)
+      // console.log(tmp)
       assert.deepEqual(tmp, exp)
     })
 
@@ -300,7 +300,7 @@ describe('#Holidays', function () {
       res.forEach(function (p) {
         tmp[p.name] = toIso(p.start)
       })
-      // ~ console.log(tmp)
+      // console.log(tmp)
       assert.deepEqual(tmp, exp)
     })
 
@@ -314,7 +314,7 @@ describe('#Holidays', function () {
       res.forEach(function (p) {
         tmp[p.name] = toIso(p.start)
       })
-      // ~ console.log(tmp)
+      // console.log(tmp)
       assert.deepEqual(tmp, exp)
     })
 
@@ -328,7 +328,7 @@ describe('#Holidays', function () {
       res.forEach(function (p) {
         tmp[p.name] = toIso(p.start)
       })
-      // ~ console.log(tmp)
+      // console.log(tmp)
       assert.deepEqual(tmp, exp)
     })
 
@@ -343,7 +343,7 @@ describe('#Holidays', function () {
       res.forEach(function (p) {
         tmp[p.name] = toIso(p.start)
       })
-      // ~ console.log(tmp)
+      // console.log(tmp)
       assert.deepEqual(tmp, exp)
     })
   })
@@ -450,4 +450,3 @@ describe('#Holidays', function () {
     })
   })
 })
-

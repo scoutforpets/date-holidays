@@ -463,4 +463,4 @@ See [LICENSE][] for more information.
 [holidays.yaml specification]: ./docs/specification.md
 [Holidays API]: ./docs/Holidays.md
 [date-holidays-ical]: https://github.com/commenthol/date-holidays-ical
-
+[CLDR]: http://cldr.unicode.org/index/downloads

@@ -1,37 +1,59 @@
-'use strict'
-
 /* global describe, it */
 
-var fs = require('fs')
-var path = require('path')
-var assert = require('assert')
-var Holidays = require('..')
+'use strict'
+
+const fs = require('fs')
+const path = require('path')
+const assert = require('assert')
+const Holidays = require('..')
+const ht = require('hashtree').hashTree
 
 var writetests
 var _countries
 
+var years = [ 2015, 2016, 2017, 2018, 2019, 2020 ]
+
 for (var i = 2; i < process.argv.length; i++) {
   // regenerate tests with `mocha test/all.mocha.js --writetests`
-  if (process.argv[i] === '--countries') {
+  if (process.argv[i] === '--country') {
     var c = process.argv[++i].split(',')
     _countries = {}
     for (var j in c) {
       _countries[c[j]] = c[j]
     }
+  } else if (process.argv[i] === '--year') {
+    years = process.argv[++i].split(',')
   } else if (process.argv[i] === '--writetests') {
     writetests = true
   }
 }
-
-var years = [ 2015, 2016, 2017, 2018, 2019, 2020 ]
 
 function filename (name) {
   var file = path.join(__dirname, 'fixtures', name + '.json')
   return file
 }
 
+var arr = [ 'date', 'start', 'end', 'name', 'substitute', 'type' ]
+function sorter (a, b) {
+  // console.log(a, b, arr.indexOf(a), arr.indexOf(b))
+  var _a = arr.indexOf(a)
+  var _b = arr.indexOf(b)
+  if (_a >= 0 && _b >= 0) {
+    return _a - _b
+  } else {
+    return a - b
+  }
+}
+
 function writeFile (name, obj) {
   if (writetests) {
+    if (Array.isArray(obj)) {
+      obj = obj.map((item) => {
+        item = JSON.parse(JSON.stringify(item))
+        return ht.sort(item, sorter)
+      })
+    }
+
     var file = filename(name)
     fs.writeFileSync(file, JSON.stringify(obj, null, 2), 'utf8')
   }

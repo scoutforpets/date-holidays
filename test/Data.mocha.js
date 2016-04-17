@@ -1,9 +1,11 @@
-'use strict'
-
 /* global describe, it */
 
-var assert = require('assert')
-var Data = require('../lib/Data')
+'use strict'
+
+const assert = require('assert')
+const Data = require('../src/Data')
+
+var xit = it.skip
 
 // reformat days
 function getDays (obj, lang) {
@@ -28,7 +30,7 @@ function getDays (obj, lang) {
 describe('#Data', function () {
   describe('static functions', function () {
     it('can get list of supported countries', function () {
-      var obj = Data().getCountries()
+      var obj = new Data().getCountries()
       assert.equal(typeof obj, 'object')
       assert.equal(obj.AT, 'Österreich')
       assert.equal(obj.CH, 'Schweiz')
@@ -38,7 +40,7 @@ describe('#Data', function () {
     })
 
     it('can get list of supported states for AT', function () {
-      var obj = Data().getStates('at')
+      var obj = new Data().getStates('at')
       assert.equal(typeof obj, 'object')
       assert.deepEqual(obj, { b: 'Burgenland',
         k: 'Kärnten',
@@ -53,7 +55,7 @@ describe('#Data', function () {
     })
 
     it('can get a list of supported regions for de.by', function () {
-      var obj = Data().getRegions('de.by')
+      var obj = new Data().getRegions('de.by')
       assert.equal(typeof obj, 'object')
       assert.deepEqual(obj, { a: 'Stadt Augsburg' })
     })
@@ -61,7 +63,7 @@ describe('#Data', function () {
 
   describe('can get list of holidays for a country', function () {
     it('for FR', function () {
-      var obj = Data('fr').getHolidays()
+      var obj = new Data('fr').getHolidays()
       var res = getDays(obj, ['fr'])
       var exp = { '01-01': [ 'public', 'Nouvel An' ],
         'easter 1': [ 'public', 'Lundi de Pâques' ],
@@ -84,7 +86,7 @@ describe('#Data', function () {
 
   describe('can get list of holidays for a state', function () {
     it('for fr.basrhin', function () {
-      var obj = Data('fr.basrhin').getHolidays()
+      var obj = new Data('fr.basrhin').getHolidays()
       var res = getDays(obj, ['fr'])
       var exp = { '01-01': [ 'public', 'Nouvel An' ],
         'easter 1': [ 'public', 'Lundi de Pâques' ],
@@ -141,27 +143,27 @@ describe('#Data', function () {
     }
 
     it('for de by a', function () {
-      var obj = Data('de', 'by', 'a').getHolidays()
+      var obj = new Data('de', 'by', 'a').getHolidays()
       var res = getDays(obj, ['de'])
       // ~ console.log(res)
       assert.deepEqual(res, exp)
     })
 
     it('for de.by.a', function () {
-      var obj = Data('de.by.a').getHolidays()
+      var obj = new Data('de.by.a').getHolidays()
       var res = getDays(obj, ['de'])
       assert.deepEqual(res, exp)
     })
 
     it('for {de by a}', function () {
-      var obj = Data({country: 'de', state: 'by', region: 'a'}).getHolidays()
+      var obj = new Data({country: 'de', state: 'by', region: 'a'}).getHolidays()
       var res = getDays(obj, ['de'])
       assert.deepEqual(res, exp)
     })
   })
 
-  it.skip('devel', function () {
-    var obj = Data('gb.sc').getHolidays()
+  xit('devel', function () {
+    var obj = new Data('gb.sc').getHolidays()
     console.log(obj)
     var res = getDays(obj, ['en'])
     console.log(res)

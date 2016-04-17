@@ -23,7 +23,7 @@ names:
       es: Año Nuevo
       et: uusaasta
       fi: Uudenvuodenpäivä
-      #fr: Jour de l'An
+      # fr: Jour de l'An
       fr: Nouvel An
       hr: Nova godina
       hu: Újév
@@ -50,16 +50,16 @@ names:
       en: Epiphany
       am: ብርሐነ ጥምቀት
       de: Heilige Drei Könige
-      #de: Erscheinung des Herrn
+      # de: Erscheinung des Herrn
       es: Día de los Reyes Magos
-      #es: Epifanía del Señor
+      # es: Epifanía del Señor
       et: kolmekuningapäev
       fi: Loppiainen
       fr: l'Épiphanie
       el: Θεοφάνεια
       hr: Bogojavljenje, Sveta tri kralja
       it: Befana
-      #it: Epifania
+      # it: Epifania
       is: Þrettándinn
       nl: Driekoningen
       pl: Święto Trzech Króli
@@ -131,7 +131,7 @@ names:
       el: Κοίμηση της Θεοτόκου
       hr: Velika Gospa
       it: Ferragosto
-      #it: Assunzione di Maria Virgine
+      # it: Assunzione di Maria Virgine
       lt: Žolinė
       mg: Asompsiona
       mt: Santa Marija
@@ -151,7 +151,7 @@ names:
       hr: Svi sveti
       hu: Mindenszentek
       it: Ognissanti
-      #it: Tutti i Santi
+      # it: Tutti i Santi
       lt: Visų šventųjų diena
       mg: Fetin'ny olo-masina
       nl: Allerheiligen
@@ -257,7 +257,7 @@ names:
       et: teine jõulupüha
       fi: 2. joulupäivä
       fr: Lendemain de Noël
-      #fr: Saint Etienne
+      # fr: Saint Etienne
       hr: Svetog Stjepana
       hu: Karácsony másnapja
       it: Santo Stefano
@@ -274,7 +274,7 @@ names:
       en: New Year's Eve
       de: Silvester
       es: Fin del Año
-      #es: Nochevieja
+      # es: Nochevieja
       fi: Uudenvuodenaatto
       fr: Saint-Sylvestre
       hu: Szilveszter
@@ -299,7 +299,7 @@ names:
       en: Shrove Tuesday
       es: Carnaval
       de: Faschingsdienstag
-      #de: Fastnacht
+      # de: Fastnacht
       hr: Pokladni utorak
       pt: Carnaval
   easter -46: # Ash Wednesday

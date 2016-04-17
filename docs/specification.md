@@ -207,13 +207,19 @@ Rule: append ` HH:MM`
 
 ### Different duration other than 24 hours
 
-A holiday might start in the afternoon of a given day ` HH:MM`
+A holiday last longer/less then the default of one day. For attribution the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations) format for durations is used.
 
-Rule: append ` +<number>(d|h|day|hour|days|hours)`
+Rule: append `P0DT0H0M`
+
+- where `0` gets replaced by a number
+- `D` = days
+- `H` = hours
+- `M` = minutes
+- years, months and seconds are not supported
 
 **Examples**:
-- `12-31 14:00 +5h` holiday starts at 14h on December 31st and ends at 21h
-- `easter +14h` holiday starts on midnight Easter Sonday and ends at 14h
+- `12-31 14:00 PT5H` holiday starts at 14h on December 31st and ends at 21h as duration is 5 hours
+- `easter P1DT12H` holiday starts on midnight Easter sunday and ends at the following tuesday at 12h
 
 ### Start-time of holiday changes per weekday
 
@@ -331,7 +337,7 @@ days:
 
 ### Moving a date
 
-In order to move a date for a rule use `disable` together with `enable`
+In order to move a date for a rule use `disable` together with `enable`.
 
 E.g. in case that the 4th Monday in November is the 2015-11-23 then the day gets moved to 2015-11-27.
 
@@ -345,7 +351,6 @@ days:
     name:
       en: Day of National Sovereignty
 ```
-
 
 ## Generation of `holidays.json`
 

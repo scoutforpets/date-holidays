@@ -6,3 +6,4 @@ tmp/
 *.log
 *.tgz
 .eslintcache
+test/x.js

@@ -56,7 +56,7 @@ holidays:
         name:
           en: Our Lady of Meritxell
           es: Nuestra Sra. De Meritxell
-          cat: Mare de Déu de Meritxell
+          ca: Mare de Déu de Meritxell
       11-01:
         _name: 11-01
       12-08:
@@ -87,7 +87,7 @@ holidays:
       vella:
         name: Andorra la Vella
         days:
-          1st saturday after 08-01 +3days:
+          1st saturday after 08-01 P3D:
             name:
               en: Andorra La Vella Festival
               ca: Andorra La Vella Festival
@@ -153,9 +153,9 @@ holidays:
     days:
       12-31:
         _name: 12-31
-      01-01 +2d:
+      01-01 P2D:
         _name: 01-01
-      01-03 +3d:
+      01-03 P3D:
         name:
           en: Pre-Christmas holidays
           hy: Նախածննդյան տոներ
@@ -952,7 +952,7 @@ holidays:
         name:
           pt: Dia de Tiradentes
           en: Tiradentes' Day
-      easter -50 +110h:
+      easter -50 PT110H:
         name:
           pt: Carnaval
           en: Carnival
@@ -2821,7 +2821,7 @@ holidays:
         _name: easter 50
       08-15:
         _name: 08-15
-      08-16 +2d:
+      08-16 P2D:
         _name: Independence Day
       11-01:
         _name: 11-01
@@ -2829,7 +2829,7 @@ holidays:
         _name: 12-25
       1 Shawwal:
         _name: 1 Shawwal
-      10 Dhu al-Hijjah::
+      10 Dhu al-Hijjah:
         _name: 10 Dhu al-Hijjah
 
   # @source https://www.gov.uk/bank-holidays
@@ -3011,7 +3011,7 @@ holidays:
         type: observance
       easter 1:
         _name: easter 1
-      04-24 +3d:
+      04-24 P3D:
         name:
           en: Carriacou Maroon and String Band Music Festival
         type: observance
@@ -3037,14 +3037,14 @@ holidays:
         name:
           en: Kirani Day
         type: observance
-      10-15 +5d:
+      10-15 P5D:
         name:
           en: Aunty Tek Spice Word Festival
         type: observance
       10-25:
         name:
           en: Thanksgiving Day
-      12-04 +3d:
+      12-04 P3D:
         name:
           en: Camerhogne Folk Festival
         type: observance
@@ -3512,6 +3512,7 @@ holidays:
       12-31:
         _name: 12-31
         type: observance
+
   # @source http://www.citizensinformation.ie/en/employment/employment_rights_and_conditions/leave_and_holidays/public_holidays_in_ireland.html
   IE:
     names:
@@ -3785,16 +3786,11 @@ holidays:
         name:
           en: Foundation Day
           jp: 建国記念の日
-      spring equinox in Asia/Tokyo:
-        name:
-          en: Spring Equinox Day
-          jp: 春分の日
-      substitutes 03-21 if sunday then next monday:
+      spring equinox in Asia/Tokyo and if sunday then next monday:
         substitute: true
         name:
           en: Spring Equinox Day
           jp: 春分の日
-        # TODO create rule
       04-29 and if sunday then next monday:
         substitute: true
         name:
@@ -4294,9 +4290,9 @@ holidays:
       11-01:
         _name: 11-01
       # Muslim holidays
-      1 Shawwal +3d:
+      1 Shawwal P3D:
         _name: 1 Shawwal
-      10 Dhu al-Hijjah +3d:
+      10 Dhu al-Hijjah P3D:
         _name: 10 Dhu al-Hijjah
       1 Muharram:
         _name: 1 Muharram
@@ -4317,12 +4313,12 @@ holidays:
         _name: 27 Ramadan
         type: observance
       # Jewish holidays
-      15 Nisan +2d:
+      15 Nisan P2D:
         _name: 15 Nisan
       1 Tishrei:
         _name: 1 Tishrei
         type: observance
-      10 Tishrei +2d:
+      10 Tishrei P2D:
         _name: 10 Tishrei
 
   # @source https://fr.wikipedia.org/wiki/Madagascar
@@ -4551,7 +4547,6 @@ holidays:
           en: Family Day
       substitutes 12-25 if sunday then next monday:
         _name: Public Holiday
-
 
   # @source http://www.malawilii.org/mw/consolidatedlegislation/1805/public_holidays_act_pdf_49780.pdf
   MW:
@@ -5325,7 +5320,7 @@ holidays:
     days:
       01-01:
         _name: 01-01
-      01-02 +5days:
+      01-02 P5D:
         name:
           ru: Новогодние каникулы
           en: New Year Holiday
@@ -5499,6 +5494,7 @@ holidays:
       12-31:
         _name: 12-31
         type: observance
+
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_Somalia
   SO:
     names:
@@ -5536,7 +5532,7 @@ holidays:
         name: Somaliland
         days:
           01-01: false
-          05-18 +2d:
+          05-18 P2D:
             name:
               en: Restoration of Somaliland Sovereignty
           07-01: false
@@ -5656,6 +5652,7 @@ holidays:
           08-05:
             name:
               es: Fiestas Agostinas
+
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_Togo
   TG:
     names:
@@ -5732,9 +5729,9 @@ holidays:
         name:
           en: Republic Day
           tr: Cumhuriyet Bayramı
-      1 Shawwal +90h:
+      1 Shawwal PT90H:
         _name: 1 Shawwal
-      10 Dhu al-Hijjah +114h:
+      10 Dhu al-Hijjah PT114H:
         _name: 10 Dhu al-Hijjah
 
   # @source http://www.ilo.org/dyn/travail/docs/2234/Public%20Holidays%20Ordinance%20-%201966%20Amendment.pdf
@@ -5785,7 +5782,7 @@ holidays:
         _name: 12-25
       12-26:
         _name: 12-25
-      1 Shawwal +2days:
+      1 Shawwal P2D:
         _name: 1 Shawwal
       10 Dhu al-Hijjah:
         _name: 10 Dhu al-Hijjah
@@ -5827,7 +5824,7 @@ holidays:
           es: Carnaval
       easter -47:
         _name: easter -47
-      easter -6 +7d:
+      easter -6 P7D:
         name:
           en: Holy Week
           es: Semana Santa
@@ -6693,6 +6690,7 @@ holidays:
         zones:
           - America/Denver
         # All federal holidays
+
   # @source http://www.parlamento.gub.uy/leyes/AccesoTextoLey.asp?Ley=14977
   # @source http://www.parlamento.gub.uy/leyes/AccesoTextoLey.asp?Ley=16805
   # @source http://www.parlamento.gub.uy/leyes/AccesoTextoLey.asp?Ley=17414
@@ -6719,7 +6717,7 @@ holidays:
       easter -47:
         _name: easter -47
         type: observance
-      easter -6 +5d:
+      easter -6 P5D:
         name:
           en: Tourism Week
           es: Semana de Turismo
@@ -6768,6 +6766,7 @@ holidays:
       12-31:
         _name: 12-31
         type: observance
+
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_South_Africa
   # @source http://www.gov.za/about-sa/public-holidays
   # @source http://www.info.gov.za/acts/1994/a36-94.pdf
@@ -6859,7 +6858,6 @@ holidays:
       substitutes 12-26 if sunday then next monday:
         name:
           en: Public Holiday
-
 
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_Zambia
   # @source http://www.parliament.gov.zm/sites/default/files/documents/acts/Public%20Holidays%20Act.pdf
