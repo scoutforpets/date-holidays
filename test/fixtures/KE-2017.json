@@ -11,8 +11,8 @@
     "start": "2017-01-01T21:00:00.000Z",
     "end": "2017-01-02T21:00:00.000Z",
     "name": "Mwaka mpya (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2017-04-14 00:00:00",

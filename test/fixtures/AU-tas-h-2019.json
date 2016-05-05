@@ -18,8 +18,8 @@
     "start": "2019-01-27T13:00:00.000Z",
     "end": "2019-01-28T13:00:00.000Z",
     "name": "Australia Day (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2019-02-11 00:00:00",

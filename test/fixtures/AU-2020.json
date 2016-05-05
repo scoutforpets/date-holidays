@@ -18,8 +18,8 @@
     "start": "2020-01-26T13:00:00.000Z",
     "end": "2020-01-27T13:00:00.000Z",
     "name": "Australia Day (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2020-04-10 00:00:00",
@@ -61,8 +61,8 @@
     "start": "2020-04-26T14:00:00.000Z",
     "end": "2020-04-27T14:00:00.000Z",
     "name": "ANZAC Day (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2020-06-08 00:00:00",
@@ -97,8 +97,8 @@
     "start": "2020-12-27T13:00:00.000Z",
     "end": "2020-12-28T13:00:00.000Z",
     "name": "Boxingday (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2020-12-31 00:00:00",

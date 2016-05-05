@@ -30,13 +30,15 @@ const grammar = (function () {
   // raw rules
   var raw = {
     _weekdays: 'sunday|monday|tuesday|wednesday|thursday|friday|saturday',
+    _months: 'January|February|March|April|May|June|July|August|September|October|November|December',
     _islamicMonths: 'Muharram|Safar|Rabi al-awwal|Rabi al-thani|Jumada al-awwal|Jumada al-thani|Rajab|Shaban|Ramadan|Shawwal|Dhu al-Qidah|Dhu al-Hijjah',
     _hebrewMonths: 'Nisan|Iyyar|Sivan|Tamuz|Av|Elul|Tishrei|Cheshvan|Kislev|Tevet|Shvat|Adar',
     _days: /(_weekdays)s?/,
-    _direction: /(before|after|next|previous)/,
+    _direction: /(before|after|next|previous|in)/,
     _counts: /(\d+)(?:st|nd|rd|th)?/,
     _count_days: /([-+]?\d{1,2}) ?(?:days?|d)?/,
 
+    dateMonth: /^(_months)/,
     date: /^(?:0*(\d{1,4})-)?0?(\d{1,2})-0?(\d{1,2})/,
     time: /^(?:T?0?(\d{1,2}):0?(\d{1,2})|T0?(\d{1,2}))/,
     duration: /^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?)?/, // follows ISO 8601
@@ -75,6 +77,9 @@ const grammar = (function () {
   raw.islamic = replace(raw.islamic, '')
     (/_islamicMonths/, raw._islamicMonths)
     ()
+  raw.dateMonth = replace(raw.dateMonth)
+    (/_months/, raw._months)
+    ()
 
   raw.rule_date_if_then = replace(raw.rule_date_if_then, '')
     (/_direction/g, raw._direction)
@@ -92,6 +97,12 @@ const grammar = (function () {
     ()
 
   var i = 1
+  raw.months = {}
+  raw._months.split('|').forEach(function (m) {
+    raw.months[m] = i++
+  })
+
+  i = 1
   raw.islamicMonths = {}
   raw._islamicMonths.split('|').forEach(function (m) {
     raw.islamicMonths[m] = i++
@@ -115,6 +126,7 @@ class Parser {
       '_islamic',
       '_hebrew',
       '_equinox',
+      '_dateMonth',
       '_ruleDateIfThen',
       '_ruleYear',
       '_ruleDateDir',
@@ -277,6 +289,22 @@ class Parser {
     }
   }
 
+  _dateMonth (o) {
+    var cap
+    if ((cap = grammar.dateMonth.exec(o.str))) {
+      this._shorten(o, cap[0])
+      cap.shift()
+      let res = {
+        fn: 'gregorian',
+        day: 1,
+        month: grammar.months[cap.shift()],
+        year: undefined
+      }
+      this.tokens.push(res)
+      return true
+    }
+  }
+
   _space (o) {
     var cap
     if ((cap = grammar.space.exec(o.str))) {
@@ -367,6 +395,9 @@ class Parser {
         count: toNumber(cap.shift()) || 1,
         weekday: cap.shift(),
         direction: cap.shift()
+      }
+      if (res.direction === 'in') {
+        res.direction = 'after'
       }
       this.tokens.push(res)
       return true

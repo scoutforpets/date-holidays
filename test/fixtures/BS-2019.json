@@ -88,8 +88,8 @@
     "start": "2019-10-14T04:00:00.000Z",
     "end": "2019-10-15T04:00:00.000Z",
     "name": "National Heroes' Day (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2019-12-25 00:00:00",

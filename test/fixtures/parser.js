@@ -22,6 +22,18 @@ module.exports = {
 		month: 10,
 		day: 9
 	}],
+	"August": [{
+		fn: "gregorian",
+		year: undefined,
+		month: 8,
+		day: 1
+	}],
+	"November": [{
+		fn: "gregorian",
+		year: undefined,
+		month: 11,
+		day: 1
+	}],
 	"easter -3": [{
 		fn: "easter",
 		type: "easter",
@@ -422,6 +434,17 @@ module.exports = {
 		count: 1,
 		weekday: "wednesday",
 		direction: "before"
+	}],
+	"1st wednesday in October": [{
+		fn: "gregorian",
+		year: undefined,
+		month: 10,
+		day: 1
+	}, {
+		rule: "dateDir",
+		count: 1,
+		weekday: "wednesday",
+		direction: "after"
 	}],
 	"2nd sunday after 11-01": [{
 		fn: "gregorian",

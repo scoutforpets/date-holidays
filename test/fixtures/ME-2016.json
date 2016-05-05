@@ -102,8 +102,8 @@
     "start": "2016-05-02T22:00:00.000Z",
     "end": "2016-05-03T22:00:00.000Z",
     "name": "Praznik rada (zamjena dan)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2016-05-04 00:00:00",
@@ -138,8 +138,8 @@
     "start": "2016-05-22T22:00:00.000Z",
     "end": "2016-05-23T22:00:00.000Z",
     "name": "Dan neovisnosti (zamjena dan)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2016-06-06 00:00:00",

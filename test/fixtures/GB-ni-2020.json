@@ -67,8 +67,8 @@
     "start": "2020-07-12T23:00:00.000Z",
     "end": "2020-07-13T23:00:00.000Z",
     "name": "Battle of the Boyne (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   },
   {
     "date": "2020-12-25 00:00:00",
@@ -89,7 +89,7 @@
     "start": "2020-12-28T00:00:00.000Z",
     "end": "2020-12-29T00:00:00.000Z",
     "name": "Boxingday (substitute day)",
-    "substitute": true,
-    "type": "public"
+    "type": "public",
+    "substitute": true
   }
 ]

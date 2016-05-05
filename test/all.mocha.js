@@ -33,11 +33,10 @@ function filename (name) {
   return file
 }
 
-var arr = [ 'date', 'start', 'end', 'name', 'substitute', 'type' ]
+var SORTORDER = [ 'date', 'start', 'end', 'name', 'type', 'substitute' ]
 function sorter (a, b) {
-  // console.log(a, b, arr.indexOf(a), arr.indexOf(b))
-  var _a = arr.indexOf(a)
-  var _b = arr.indexOf(b)
+  var _a = SORTORDER.indexOf(a)
+  var _b = SORTORDER.indexOf(b)
   if (_a >= 0 && _b >= 0) {
     return _a - _b
   } else {
