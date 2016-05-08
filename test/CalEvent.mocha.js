@@ -67,7 +67,7 @@ describe('#CalEventFactory', function () {
     })
     var res = date.inYear(2015).get()
     var exp = [{
-      date: '2015-04-04 00:00:00',
+      date: '2015-04-04 00:00:00 -0600',
       start: 'fri 2015-04-03 18:00',
       end: 'sat 2015-04-04 18:00'
     }]
@@ -83,7 +83,7 @@ describe('#CalEventFactory', function () {
     })
     var res = date.inYear(2015).get()
     var exp = [{
-      date: '2015-07-19 00:00:00',
+      date: '2015-07-19 00:00:00 -0600',
       start: 'sat 2015-07-18 18:00',
       end: 'sun 2015-07-19 18:00'
     }]
@@ -225,7 +225,7 @@ describe('#Hebrew', function () {
     })
     var res = date.inYear(2015).get()
     var exp = [{
-      date: '2015-04-04 00:00:00',
+      date: '2015-04-04 00:00:00 -0600',
       start: 'fri 2015-04-03 18:00',
       end: 'sat 2015-04-04 18:00'
     }]
@@ -240,7 +240,7 @@ describe('#Hebrew', function () {
     })
     var res = date.inYear(2016).get()
     var exp = [{
-      date: '2016-04-23 00:00:00',
+      date: '2016-04-23 00:00:00 -0600',
       start: 'fri 2016-04-22 18:00',
       end: 'sat 2016-04-23 18:00'
     }]
@@ -255,11 +255,11 @@ describe('#Hebrew', function () {
     })
     var res = date.inYear(2015).get()
     var exp = [{
-      'date': '2015-01-09 00:00:00',
+      'date': '2015-01-09 00:00:00 -0600',
       'start': 'thu 2015-01-08 18:00',
       'end': 'fri 2015-01-09 18:00'
     }, {
-      date: '2015-12-30 00:00:00',
+      date: '2015-12-30 00:00:00 -0600',
       start: 'tue 2015-12-29 18:00',
       end: 'wed 2015-12-30 18:00'
     }]
@@ -288,7 +288,7 @@ describe('#Hijri', function () {
     })
     var res = date.inYear(2015).get()
     var exp = [{
-      date: '2015-07-19 00:00:00',
+      date: '2015-07-19 00:00:00 -0600',
       start: 'sat 2015-07-18 18:00',
       end: 'sun 2015-07-19 18:00'
     }]
@@ -304,11 +304,11 @@ describe('#Hijri', function () {
     })
     var res = date.inYear(2016).get()
     var exp = [{
-      date: '2016-01-07 00:00:00',
+      date: '2016-01-07 00:00:00 -0600',
       start: 'wed 2016-01-06 18:00',
       end: 'thu 2016-01-07 18:00'
     }, {
-      date: '2016-12-26 00:00:00',
+      date: '2016-12-26 00:00:00 -0600',
       start: 'sun 2016-12-25 18:00',
       end: 'mon 2016-12-26 18:00'
     }]
@@ -324,7 +324,7 @@ describe('#Hijri', function () {
     })
     var res = date.inYear(2016).get()
     var exp = [{
-      date: '2016-12-26 00:00:00',
+      date: '2016-12-26 00:00:00 -0600',
       start: 'sun 2016-12-25 18:00',
       end: 'mon 2016-12-26 18:00'
     }]

@@ -234,7 +234,11 @@ Countries: 93
 ├── RW: Repubulika y'u Rwanda
 ├── SE: Sverige
 ├── SO: Jamhuuriyadda Federaalka Soomaaliya
-│   └── som: Somaliland
+│   ├── AW: Awdal
+│   ├── SA: Sanaag
+│   ├── SO: Sool
+│   ├── TO: Togdheer
+│   └── WO: Woqooyi Galbeed
 ├── SS: South Sudan
 ├── SV: El Salvador
 │   └── SS: San Salvador
@@ -322,7 +326,7 @@ hd.getCountries()
 /*>
 { AD: 'Andorra',
   ...
-  US: 'United States' }
+  ZW: 'Zimbabwe' }
 */
 
 // get supported states e.g. for US
@@ -453,6 +457,7 @@ See [LICENSE][] for more information.
 
 <!-- !ref -->
 
+* [CLDR][CLDR]
 * [CONTRIBUTING.md][CONTRIBUTING.md]
 * [date-holidays-ical][date-holidays-ical]
 * [Holidays API][Holidays API]

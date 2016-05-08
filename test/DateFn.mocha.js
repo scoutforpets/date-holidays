@@ -76,7 +76,7 @@ describe('#DateFn', function () {
         var fn = new DateFn('3 Shawwal')
         var res = fn.inYear(2015).get()
         var exp = [{
-          date: '2015-07-19 00:00:00',
+          date: '2015-07-19 00:00:00 -0600',
           start: 'sat 2015-07-18 18:00',
           end: 'sun 2015-07-19 18:00'
         }]
@@ -86,11 +86,11 @@ describe('#DateFn', function () {
         var fn = new DateFn('13 Rabi al-thani')
         var res = fn.inYear(2017).get()
         var exp = [{
-          date: '2017-01-11 00:00:00',
+          date: '2017-01-11 00:00:00 -0600',
           start: 'tue 2017-01-10 18:00',
           end: 'wed 2017-01-11 18:00'
         }, {
-          date: '2017-12-31 00:00:00',
+          date: '2017-12-31 00:00:00 -0600',
           start: 'sat 2017-12-30 18:00',
           end: 'sun 2017-12-31 18:00'
         }]
@@ -104,7 +104,7 @@ describe('#DateFn', function () {
         var fn = new DateFn('15 Nisan')
         var res = fn.inYear(2015).get()
         var exp = [{
-          date: '2015-04-04 00:00:00',
+          date: '2015-04-04 00:00:00 -0600',
           start: 'fri 2015-04-03 18:00',
           end: 'sat 2015-04-04 18:00'
         }]
@@ -114,7 +114,7 @@ describe('#DateFn', function () {
         var fn = new DateFn('15 Nisan')
         var res = fn.inYear(2016).get()
         var exp = [{
-          date: '2016-04-23 00:00:00',
+          date: '2016-04-23 00:00:00 -0600',
           start: 'fri 2016-04-22 18:00',
           end: 'sat 2016-04-23 18:00'
         }]
@@ -124,11 +124,11 @@ describe('#DateFn', function () {
         var fn = new DateFn('18 Tevet')
         var res = fn.inYear(2015).get()
         var exp = [{
-          date: '2015-01-09 00:00:00',
+          date: '2015-01-09 00:00:00 -0600',
           start: 'thu 2015-01-08 18:00',
           end: 'fri 2015-01-09 18:00'
         }, {
-          date: '2015-12-30 00:00:00',
+          date: '2015-12-30 00:00:00 -0600',
           start: 'tue 2015-12-29 18:00',
           end: 'wed 2015-12-30 18:00'
         }]
@@ -482,9 +482,10 @@ describe('#DateFn', function () {
       var fn = new DateFn('substitutes 1 Shawwal if wednesday,saturday,sunday then next monday')
       var res = fn.inYear(2016).get()
       var exp = [{
-        date: '2016-07-11 00:00:00',
+        date: '2016-07-11 00:00:00 -0600',
         start: 'sun 2016-07-10 18:00',
-        end: 'mon 2016-07-11 18:00'
+        end: 'mon 2016-07-11 18:00',
+        substitute: true
       }]
       assert.deepEqual(fixResult(res), exp)
     })
@@ -574,13 +575,14 @@ describe('#DateFn', function () {
       var fn = new DateFn('4 Shawwal and if saturday then next monday')
       var res = fn.inYear(2016).get()
       var exp = [{
-        date: '2016-07-09 00:00:00',
+        date: '2016-07-09 00:00:00 -0600',
         start: 'fri 2016-07-08 18:00',
         end: 'sat 2016-07-09 18:00'
       }, {
-        date: '2016-07-11 00:00:00',
+        date: '2016-07-11 00:00:00 -0600',
         start: 'sun 2016-07-10 18:00',
-        end: 'mon 2016-07-11 18:00'
+        end: 'mon 2016-07-11 18:00',
+        substitute: true
       }]
       // log(fixResult(res))
       assert.deepEqual(fixResult(res), exp)
@@ -589,7 +591,7 @@ describe('#DateFn', function () {
       var fn = new DateFn('4 Shawwal and if saturday then next monday')
       var res = fn.inYear(2017).get()
       var exp = [{
-        date: '2017-06-28 00:00:00',
+        date: '2017-06-28 00:00:00 -0600',
         start: 'tue 2017-06-27 18:00',
         end: 'wed 2017-06-28 18:00'
       }]

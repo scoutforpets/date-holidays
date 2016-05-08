@@ -1,6 +1,6 @@
 # create new rules
 
-- [ ] allow dateIf Rule on any date - see JP
+- [x] allow dateIf Rule on any date - see JP
   ```
   spring equinox in Asia/Tokyo and if sunday then next monday:
     substitute: true
