@@ -12,7 +12,7 @@ class Hijri extends CalEventMap {
   get (timezone) {
     var arr = this.dates.map((date) => {
       var o = {
-        date: date.toString(),
+        date: date.toString() + ' -0600',
         start: date.setOffset(-6, 'h').toTimezone(timezone),
         end: date.toEndDate().toTimezone(timezone)
       }

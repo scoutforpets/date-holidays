@@ -2,13 +2,16 @@
 # @author commenthol
 # @license CC-BY-SA-3
 #
-# for country codes check:
+# For country codes check:
 # <https://en.m.wikipedia.org/wiki/List_of_Internet_top-level_domains#Country_code_top-level_domains>
 #
-# for timezones:
+# For country codes / divisions / subdivisions - ISO 3166-2:
+# <https://www.iso.org/obp/ui/#search>
+#
+# For timezones:
 # <https://github.com/moment/moment-timezone/blob/develop/data/meta/latest.json>
 #
-# for language codes:
+# For language codes ISO 639-1:
 # <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>
 #
 
@@ -84,7 +87,7 @@ holidays:
       easter 50:
         _name: easter 50
     regions:
-      vella:
+      '07':
         name: Andorra la Vella
         days:
           1st saturday in August P3D:
@@ -388,13 +391,13 @@ holidays:
         _name: 12-31
         type: bank
     states:
-      b:
+      '1':
         name: Burgenland
         days:
           11-11:
             name:
               de-at: Martinstag
-      k:
+      '2':
         name: Kärnten
         days:
           03-19:
@@ -402,40 +405,40 @@ holidays:
           10-10:
             name:
               de-at: Tag der Volksabstimmung
-      'n':
+      '3':
         name: Niederösterreich
         days:
           11-15:
             name:
               de-at: Leopold
-      o:
+      '4':
         name: Oberösterreich
         days:
           05-04:
             name:
               de-at: Florian
-      s:
+      '5':
         name: Land Salzburg
         days:
           09-24:
             name:
               de-at: Rupert
-      st:
+      '6':
         name: Steiermark
         days:
           03-19:
             _name: 03-19
-      t:
+      '7':
         name: Tirol
         days:
           03-19:
             _name: 03-19
-      v:
+      '8':
         name: Vorarlberg
         days:
           03-19:
             _name: 03-19
-      w:
+      '9':
         name: Wien
         days:
           11-15:
@@ -505,7 +508,7 @@ holidays:
         type: observance
     states:
       # @source http://www.cmd.act.gov.au/communication/holidays
-      act:
+      ACT:
         name: Australian Capital Territory
         zones:
           - Australia/Sydney
@@ -522,7 +525,7 @@ holidays:
           1st monday in October:
             name: Labour Day
       # @source http://www.industrialrelations.nsw.gov.au/oirwww/NSW_public_holidays/NSW_Public_Holidays.page?
-      nsw:
+      NSW:
         name: New South Wales
         zones:
           - Australia/Sydney
@@ -534,7 +537,7 @@ holidays:
           12-31:
             type: public
       # @source http://www.ocpe.nt.gov.au/working_in_the_ntps/legislation/public_holidays
-      nt:
+      NT:
         name: Northern Territory
         zones:
           - Australia/Darwin
@@ -546,7 +549,7 @@ holidays:
             name:
               en: Picnic Day
       # @source http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/public-holidays/dates
-      qld:
+      QLD:
         name: Queensland
         zones:
           - Australia/Brisbane
@@ -556,7 +559,7 @@ holidays:
             name:
               en: Labour Day
       # @source http://www.safework.sa.gov.au/show_page.jsp?id=2483
-      sa:
+      SA:
         name: South Australia
         zones:
           - Australia/Adelaide
@@ -571,7 +574,7 @@ holidays:
             _name: 12-24
             type: public
       # @source http://worksafe.tas.gov.au/laws/public_holidays
-      tas:
+      TAS:
         name: Tasmania
         zones:
           - Australia/Hobart
@@ -587,20 +590,20 @@ holidays:
             type: optional
             note: Public Service employees or contract dependent
         regions:
-          h:
+          H:
             name: Hobart
             days:
               2nd monday in February:
                 name:
                   en: Royal Hobart Regatta
-          nh:
+          NH:
             name: Non-Hobart
             days:
               1st monday in November:
                 name:
                   en: Recreation Day
       # @source http://www.business.vic.gov.au/victorian-public-holidays-and-daylight-saving/victorian-public-holidays
-      vic:
+      VIC:
         name: Victoria
         zones:
           - Australia/Melbourne
@@ -617,14 +620,14 @@ holidays:
               en: Grand Final Friday
             note: Date might differ as dependent on AFL schedule
         regions:
-          m:
+          M:
             name: Melbourne
             days:
               1st tuesday in November:
                 name:
                   en: Melbourne Cup
       # @source https://www.commerce.wa.gov.au/labour-relations/public-holidays-western-australia
-      wa:
+      WA:
         name: Western Australia
         zones:
           - Australia/Perth
@@ -711,7 +714,17 @@ holidays:
       12-25:
         _name: 12-25
     states:
-      de:
+      BRU:
+        name: Bruxelles
+        langs:
+          - fr
+          - nl
+        days:
+          05-08:
+            name:
+              nl: Feest van de Iris
+              fr: Fête de l'Iris
+      DE:
         name: Deutschsprachige Gemeinschaft
         langs:
           - de
@@ -721,25 +734,7 @@ holidays:
               de: Tag der Deutschsprachigen Gemeinschaft
               fr: Jour de la Communauté Germanophone
               nl: Feestdag van de Duitstalige Gemeenschap
-      fr:
-        name: Communauté française
-        langs:
-          - fr
-        days:
-          09-27:
-            name:
-              de: Tag der Französischsprachigen Gemeinschaft
-              fr: La fête de la communauté française
-              nl: Feestdag van de Franse Gemeenschap
-        regions:
-          br:
-            name: Bruxelles
-            days:
-              05-08:
-                name:
-                  nl: Feest van de Iris
-                  fr: Fête de l'Iris
-      vl:
+      VLG:
         name: Vlaamse Gemeenschap
         langs:
           - nl
@@ -749,6 +744,16 @@ holidays:
               de: Festtag der Wallonischen Region
               fr: Fête de la Région wallonne
               nl: Feestdag van de Vlaamse Gemeenschap
+      WAL:
+        name: Communauté française
+        langs:
+          - fr
+        days:
+          09-27:
+            name:
+              de: Tag der Französischsprachigen Gemeinschaft
+              fr: La fête de la communauté française
+              nl: Feestdag van de Franse Gemeenschap
 
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_Bulgaria
   BG:
@@ -1399,15 +1404,15 @@ holidays:
         name:
           de: Stephanstag
     states:
-      zh:
+      ZH:
         name: Kanton Zürich
-      be:
+      BE:
         name: Kanton Bern
         days:
           01-02:
             name:
               de: Berchtoldstag
-      lu:
+      LU:
         name: Kanton Luzern
         days:
           03-19:
@@ -1418,7 +1423,7 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      ur:
+      UR:
         name: Kanton Uri
         days:
           01-06:
@@ -1431,7 +1436,7 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      sz:
+      SZ:
         name: Kanton Schwyz
         days:
           01-06:
@@ -1444,7 +1449,7 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      ow:
+      OW:
         name: Kanton Obwalden
         days:
           easter 60:
@@ -1453,7 +1458,7 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      nw:
+      NW:
         name: Kanton Nidwalden
         days:
           03-19:
@@ -1462,14 +1467,14 @@ holidays:
             _name: easter 60
           11-01:
             _name: 11-01
-      gl:
+      GL:
         name: Kanton Glarus
         days:
           08-15:
             _name: 08-15
           11-01:
             _name: 11-01
-      zg:
+      ZG:
         name: Kanton Zug
         days:
           03-19:
@@ -1480,7 +1485,7 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      fr:
+      FR:
         name: Kanton Freiburg
         days:
           easter 60:
@@ -1489,7 +1494,7 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      so:
+      SO:
         name: Kanton Solothurn
         days:
           easter 60:
@@ -1498,18 +1503,18 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      bs:
+      BS:
         name: Kanton Basel-Stadt
-      bl:
+      BL:
         name: Kanton Basel-Landschaft
         days:
           easter 60:
             _name: easter 60
-      sh:
+      SH:
         name: Kanton Schaffhausen
-      ar:
+      AR:
         name: Kanton Appenzell Ausserrhoden
-      ai:
+      AI:
         name: Kanton Appenzell Innerrhoden
         days:
           easter 60:
@@ -1518,14 +1523,14 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      sg:
+      SG:
         name: Kanton St. Gallen
         days:
           08-15:
             _name: 08-15
           11-01:
             _name: 11-01
-      gr:
+      GR:
         name: Kanton Graubünden
         days:
           01-06:
@@ -1538,7 +1543,7 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      ag:
+      AG:
         name: Kanton Aargau
         days:
           01-02:
@@ -1550,13 +1555,13 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      tg:
+      TG:
         name: Kanton Thurgau
         days:
           01-02:
             name:
               de: Berchtoldstag
-      ti:
+      TI:
         name: Kanton Tessin
         days:
           01-06:
@@ -1571,14 +1576,14 @@ holidays:
           11-01:
             _name: 11-01
           12-26: false
-      vd:
+      VD:
         name: Kanton Waadt
         days:
           01-02:
             name:
               de: Berchtoldstag
           12-26: false
-      vs:
+      VS:
         name: Kanton Wallis
         days:
           03-19:
@@ -1593,17 +1598,17 @@ holidays:
           11-01:
             _name: 11-01
           12-26: false
-      ne:
+      NE:
         name: Kanton Neuenburg
         days:
           easter 60:
             _name: easter 60
           12-26: false
-      ge:
+      GE:
         name: Kanton Genf
         days:
           12-26: false
-      ju:
+      JU:
         name: Kanton Jura
         days:
           01-02:
@@ -1672,29 +1677,25 @@ holidays:
       12-31:
         _name: 12-31
         type: bank
-    regions:
-      ar:
-        name: Arica
+    states:
+      AP:
+        name: Arica y Parinacota
         days:
           06-07:
             name:
               en: Battle of Arica
               es: Asalto y Toma del Morro de Arica
-      ch:
-        name: Chillán y Chillán Viejo
-        days:
-          08-20:
-            name:
-              en: Nativity of Liberator Bernardo O'Higgins
-              es: Nacimiento del Prócer de la Independencia
-      pa:
-        name: Parinacota
-        days:
-          06-07:
-            name:
-              en: Battle of Arica
-              es: Asalto y Toma del Morro de Arica
-      ta:
+      BI:
+        name: Biobío
+        regions:
+          CH:
+            name: Chillán y Chillán Viejo
+            days:
+              08-20:
+                name:
+                  en: Nativity of Liberator Bernardo O'Higgins
+                  es: Nacimiento del Prócer de la Independencia
+      TA:
         name: Tarapacá
         days:
           08-10:
@@ -2178,12 +2179,12 @@ holidays:
         _name: 12-31
         type: bank
     states:
-      bb:
+      BB:
         name: Brandenburg
         days:
           10-31:
             _name: Reformation Day
-      bw:
+      BW:
         name: Baden Würtemberg
         days:
           01-06:
@@ -2192,7 +2193,7 @@ holidays:
             _name: easter 60
           11-01:
             _name: 11-01
-      by:
+      BY:
         name: Bayern
         days:
           01-06:
@@ -2207,52 +2208,52 @@ holidays:
           11-01:
             _name: 11-01
         regions:
-          a:
+          A:
             name: Stadt Augsburg
             days:
               08-08:
                 name:
                   de: Augsburger Friedensfest
                   en: Augsburg Peace Festival
-      hb:
+      HB:
         name: Hansestadt Bremen
         days:
           '12-31 14:00 if sunday then 00:00':
             _name: 12-31
             type: public
-      he:
+      HE:
         name: Hessen
         days:
           easter 60:
             _name: easter 60
           '12-31 14:00 if sunday then 00:00':
             _name: 12-31
-      hh:
+      HH:
         name: Hansestadt Hamburg
-      mv:
+      MV:
         name: Mecklenburg Vorpommern
         days:
           10-31:
             _name: Reformation Day
-      ni:
+      NI:
         name: Niedersachsen
-      nw:
+      NW:
         name: Nordrhein-Westfalen
         days:
           easter 60:
             _name: easter 60
           11-01:
             _name: 11-01
-      rp:
+      RP:
         name: Rheinland-Pfalz
         days:
           easter 60:
             _name: easter 60
           11-01:
             _name: 11-01
-      sh:
+      SH:
         name: Schleswig-Holstein
-      sl:
+      SL:
         name: Saarland
         days:
           easter 60:
@@ -2261,21 +2262,21 @@ holidays:
             _name: 08-15
           11-01:
             _name: 11-01
-      sn:
+      SN:
         name: Sachsen
         days:
           10-31:
             _name: Reformation Day
           wednesday before 11-23:
             _name: Buß- und Bettag
-      st:
+      ST:
         name: Sachsen-Anhalt
         days:
           01-06:
             _name: 01-06
           10-31:
             _name: Reformation Day
-      th:
+      TH:
         name: Thüringen
         days:
           10-31:
@@ -2390,15 +2391,18 @@ holidays:
       12-31:
         _name: 12-31
         type: observance
-    regions:
-      qu:
-        name: Quito
-        days:
-          12-06:
-            name:
-              en: Foundation of Quito
-              es: Aniversario de la fundación de Quito
-            type: observance
+    states:
+      P:
+        name: Pichincha
+        regions:
+          QU:
+            name: Quito
+            days:
+              12-06:
+                name:
+                  en: Foundation of Quito
+                  es: Aniversario de la fundación de Quito
+                type: observance
 
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_Estonia
   EE:
@@ -2572,7 +2576,7 @@ holidays:
         substitute: true
         _name: 12-25
     states:
-      madrid:
+      MD:
         name: Comunidad de Madrid
         days:
           05-16:
@@ -2735,35 +2739,41 @@ holidays:
       12-25:
         _name: 12-25
     states:
-      basrhin:
-        name: Département Bas-Rhin
-        days:
-          easter -2:
-            _name: easter -2
-          12-26:
-            _name: 12-26
-      hautrhin:
-        name: Département Haut-Rhin
-        days:
-          easter -2:
-            _name: easter -2
-          12-26:
-            _name: 12-26
-      moselle:
-        name: Département Moselle
-        days:
-          easter -2:
-            _name: easter -2
-          12-26:
-            _name: 12-26
-      mayotte:
+      A:
+        name: Alsace
+        regions:
+          '67':
+            name: Département Bas-Rhin
+            days:
+              easter -2:
+                _name: easter -2
+              12-26:
+                _name: 12-26
+          '68':
+            name: Département Haut-Rhin
+            days:
+              easter -2:
+                _name: easter -2
+              12-26:
+                _name: 12-26
+      M:
+        name: Lorraine
+        regions:
+          '57':
+            name: Département Moselle
+            days:
+              easter -2:
+                _name: easter -2
+              12-26:
+                _name: 12-26
+      YT:
         name: "Département et région d'outre-mer Mayotte"
         zones:
           - Indian/Mayotte
         days:
           04-27:
             _name: Abolition of Slavery
-      martinique:
+      MQ:
         name: "Département et région d'outre-mer Martinique"
         zones:
           - America/Martinique
@@ -2772,7 +2782,7 @@ holidays:
             _name: easter -2
           05-22:
             _name: Abolition of Slavery
-      guadeloupe:
+      GP:
         name: "Département et région d'outre-mer Guadeloupe"
         zones:
           - America/Guadeloupe
@@ -2781,14 +2791,14 @@ holidays:
             _name: easter -2
           05-27:
             _name: Abolition of Slavery
-      guyane:
+      GF:
         name: "Département et région d'outre-mer Guyane"
         zones:
           - America/Guyana
         days:
           06-10:
             _name: Abolition of Slavery
-      reunion:
+      RE:
         name: "Département et région d'outre-mer La Réunion"
         zones:
           - Indian/Reunion
@@ -2835,7 +2845,7 @@ holidays:
   # @source https://www.gov.uk/bank-holidays
   GB:
     names:
-      en: Britain
+      en: United Kingdom
     dayoff: sunday
     zones:
       - Europe/London
@@ -2885,7 +2895,7 @@ holidays:
         name:
           en: Queen’s Diamond Jubilee
     states:
-      al:
+      ALD:
         name: Alderney
         zones:
           - Europe/Guernsey
@@ -2893,40 +2903,13 @@ holidays:
           12-15:
             name:
               en: Homecoming Day
-      en:
+      ENG:
         name: England
         days:
           1st monday before 09-01:
             name:
               en: Summer bank holiday
-      gu:
-        name: Guernsey
-        zones:
-          - Europe/Guernsey
-        days:
-          05-09:
-            name:
-              en: Liberation Day
-      im:
-        name: Isle of Man
-        zones:
-          - Europe/Isle_of_Man
-        days:
-          2nd friday in June:
-            name:
-              en: 'Tourist Trophy, Senior Race Day'
-          07-05:
-            name:
-              en: Tynwald Day
-      je:
-        name: Jersey
-        zones:
-          - Europe/Jersey
-        days:
-          05-09:
-            name:
-              en: Liberation Day
-      ni:
+      NIR:
         name: Northern Ireland
         zones:
           - Europe/Belfast
@@ -2953,7 +2936,7 @@ holidays:
             substitute: true
             name:
               en: Battle of the Boyne
-      sc:
+      SCT:
         name: Scottland
         days:
           substitutes 01-01 if sunday then next monday: false
@@ -2983,7 +2966,7 @@ holidays:
           11-30:
             name:
               en: St Andrew’s Day
-      wa:
+      WLS:
         name: Wales
         days:
           1st monday before 09-01:
@@ -3052,6 +3035,21 @@ holidays:
         _name: 12-25
       12-26:
         _name: 12-26
+
+  GG:
+    names:
+      en: Guernsey
+    dayoff: sunday
+    zones:
+      - Europe/Guernsey
+    langs:
+      - en
+    _days:
+      - GB
+    days:
+      05-09:
+        name:
+          en: Liberation Day
 
   # @source https://el.wikipedia.org/wiki/Επίσημες_αργίες_στην_Ελλάδα
   GR:
@@ -3338,15 +3336,15 @@ holidays:
       12-26:
         _name: 12-26
     regions:
-      split:
-        name: Split
+      '17':
+        name: Split-Dalmatia
         days:
           05-07:
             name:
               hr: Sveti Duje
               en: Saint Domnius
-      dubrovnik:
-        name: Dubrovnik
+      '19':
+        name: Dubrovnik-Neretva
         days:
           02-03:
             name:
@@ -3557,6 +3555,23 @@ holidays:
         name:
           en: St. Stephen's Day
 
+  IM:
+    names:
+      en: Isle of Man
+    zones:
+      - Europe/Isle_of_Man
+    langs:
+      - en
+    _days:
+      - GB
+    days:
+      2nd friday in June:
+        name:
+          en: 'Tourist Trophy, Senior Race Day'
+      07-05:
+        name:
+          en: Tynwald Day
+
   # @source https://de.m.wikipedia.org/wiki/Feiertage_in_Italien
   IT:
     names:
@@ -3604,7 +3619,7 @@ holidays:
           it: Festa Nazionale 2011
           en: National Day 2011
     states:
-      suedtirol:
+      '32':
         name: Südtirol, Alto Adige
         days:
           easter 50:
@@ -3711,6 +3726,20 @@ holidays:
         _name: 12-26
       '12-31 13:00 if sunday then 00:00':
         _name: 12-31
+
+  JE:
+    names:
+      en: Jersey
+    zones:
+      - Europe/Jersey
+    langs:
+      - en
+    _days:
+      - GB
+    days:
+      05-09:
+        name:
+          en: Liberation Day
 
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_Jamaica
   JM:
@@ -4885,80 +4914,82 @@ holidays:
         substitute: true
         _name: 12-26
     states:
-      au:
+      AUK:
         name: Auckland Province
         days:
           01-29 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday:
             name:
               en: Provincial anniversary day
-      ca:
+      CAN:
         name: Canterbury
         days:
           12-16:
             name:
               en: Christchurch Show Day
-      ch:
+        regions:
+          S:
+            name: South Canterbury
+            days:
+              12-16: false
+              4th monday in September:
+                name:
+                  en: Dominion Day
+      CIT:
         name: Chatham Islands
         days:
           11-30 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday:
             name:
               en: Provincial anniversary day
-      ha:
+      HKB:
         name: Hawke's Bay
         days:
           friday before 4th monday in October:
             name:
               en: Provincial anniversary day
-      ma:
+      MBH:
         name: Marlborough
         days:
           5th monday in October:
             name:
               en: Provincial anniversary day
-      ne:
+      NSN:
         name: Nelson
         days:
           02-01 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday:
             name:
               en: Provincial anniversary day
-      no:
+      NTL:
         name: Northland
         days:
           01-29 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday:
             name:
               en: Provincial anniversary day
-      ot:
+      OTA:
         name: Otago Province
         days:
           03-23 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday:
             name:
               en: Provincial anniversary day
             note: varies if coincides with easter monday
-      sc:
-        name: South Canterbury
-        days:
-          4th monday in September:
-            name:
-              en: Dominion Day
-      so:
+      STL:
         name: Southland
         days:
           easter 2:
             name:
               en: Provincial anniversary day
-      ta:
+      TKI:
         name: Taranaki
         days:
           2nd monday in March:
             name:
               en: Provincial anniversary day
-      we:
+      WGN:
         name: Wellington Province
         days:
           01-22 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday:
             name:
               en: Provincial anniversary day
-      wd:
+      WTC:
         name: Westland
         days:
           12-01 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday:
@@ -5061,7 +5092,7 @@ holidays:
       12-25:
         _name: 12-25
     regions:
-      cu:
+      CUS:
         name: Cuzco
         days:
           06-24:
@@ -5528,8 +5559,9 @@ holidays:
       10 Dhu al-Hijjah:
         _name: 10 Dhu al-Hijjah
     states:
-      som:
-        name: Somaliland
+      # Somaliland
+      AW:
+        name: Awdal
         days:
           01-01: false
           05-18 P2D:
@@ -5541,6 +5573,30 @@ holidays:
           10 Muharram: false
           27 Rajab:
             _name: 27 Rajab
+      SA:
+        name: Sanaag
+        _days:
+          - SO
+          - states
+          - AW
+      SO:
+        name: Sool
+        _days:
+          - SO
+          - states
+          - AW
+      TO:
+        name: Togdheer
+        _days:
+          - SO
+          - states
+          - AW
+      WO:
+        name: Woqooyi Galbeed
+        _days:
+          - SO
+          - states
+          - AW
 
   # @source https://en.wikipedia.org/wiki/Public_holidays_in_South_Sudan
   SS:
@@ -5643,7 +5699,7 @@ holidays:
       12-25:
         _name: 12-25
     regions:
-      san:
+      SS:
         name: San Salvador
         days:
           08-03:
@@ -5886,19 +5942,19 @@ holidays:
       12-31:
         _name: 12-31
     states:
-      an:
+      B:
         name: Anzoátegui
         days:
           11-14:
             name:
               es: Natalicio de José Antonio Anzoátegui
-      ca:
+      G:
         name: Carabobo
         days:
           11-13:
             name:
               es: Día de la Virgen del Socorro
-      la:
+      K:
         name: Lara
         days:
           01-14:
@@ -5908,31 +5964,31 @@ holidays:
             name:
               es: Natalicio de Jacinto Lara
         regions:
-          ba:
+          BA:
             name: Barquisimeto
             days:
               09-14:
                 name:
                   es: Día de Barquisimeto
-      mi:
+      M:
         name: Miranda
         days:
           03-19:
             _name: 03-19
-      mo:
+      N:
         name: Monagas
         days:
           12-07:
             name:
               es: Día de Maturin
-      ta:
+      S:
         name: Táchira
         days:
           08-15:
             _name: 08-15
             name:
               es: Día de la Virgen de Consolación
-      zu:
+      V:
         name: Zulia
         days:
           10-24:
@@ -6093,7 +6149,7 @@ holidays:
         _name: 12-31
         type: observed
     states:
-      al:
+      AL:
         name: Alabama
         zones:
           - America/Chicago
@@ -6110,7 +6166,7 @@ holidays:
           1st monday in June:
             name:
               en: Jefferson Davis' birthday
-      ak:
+      AK:
         name: Alaska
         zones:
           - America/Anchorage
@@ -6127,7 +6183,7 @@ holidays:
           10-18:
             name:
               en: Alaska Day
-      az:
+      AZ:
         name: Arizona
         zones:
           - America/Phoenix
@@ -6136,7 +6192,7 @@ holidays:
           3rd monday in January:
             name:
               en: Dr. Martin Luther King Jr./ Civil Rights Day
-      ar:
+      AR:
         name: Arkansas
         zones:
           - America/Chicago
@@ -6149,7 +6205,7 @@ holidays:
               en: "George Washington's Birthday/ Daisy Gatson Bates Day"
           12-24:
             _name: 12-24
-      ca:
+      CA:
         name: California
         zones:
           - America/Los_Angeles
@@ -6167,14 +6223,14 @@ holidays:
           05-23:
             name:
               en: Harvey Milk Day
-      co:
+      CO:
         name: Colorado
         zones:
           - America/Denver
         days:
           2nd monday in October:
             type: observance
-      ct:
+      CT:
         name: Connecticut
         zones:
           - America/New_York
@@ -6184,7 +6240,7 @@ holidays:
               en: Lincoln's Birthday
           easter -2:
             _name: easter -2
-      de:
+      DE:
         name: Delaware
         days:
           2nd monday in October: false
@@ -6197,13 +6253,13 @@ holidays:
           tuesday after 1st monday in November in even years:
             name:
               en: Election Day
-      dc:
+      DC:
         name: District of Columbia
         days:
           04-16:
             name:
               en: Emancipation Day
-      fl:
+      FL:
         name: Florida
         days:
           2nd monday in October: false
@@ -6214,7 +6270,7 @@ holidays:
           friday after 4th thursday in November:
             name:
               en: Day After Thanksgiving
-      ga:
+      GA:
         name: Georgia
         days:
           3rd monday in February: false
@@ -6231,7 +6287,7 @@ holidays:
             substitute: true
             name:
               en: Washington's Birthday
-      hi:
+      HI:
         name: Hawaii
         zones:
           - Pacific/Honolulu
@@ -6249,7 +6305,7 @@ holidays:
           tuesday after 1st monday in November in even years:
             name:
               en: Election Day
-      id:
+      ID:
         name: Idaho
         zones:
           - America/Boise
@@ -6258,7 +6314,7 @@ holidays:
           3rd monday in January:
             name:
               en: 'Martin Luther King, Jr./ Idaho Human Rights Day'
-      il:
+      IL:
         name: Illinois
         zones:
           - America/Chicago
@@ -6275,7 +6331,7 @@ holidays:
           tuesday after 1st monday in November in even years:
             name:
               en: Election Day
-      in:
+      IN:
         name: Indiana
         zones:
           - America/Indiana/Indianapolis
@@ -6298,7 +6354,7 @@ holidays:
           friday after 4th thursday in November:
             name:
               en: Lincoln's Birthday
-      ia:
+      IA:
         name: Iowa
         zones:
           - America/Chicago
@@ -6306,14 +6362,14 @@ holidays:
           02-12:
             name:
               en: Lincoln's Birthday
-      ks:
+      KS:
         name: Kansas
         zones:
           - America/Chicago
           - America/Denver
         days:
           3rd monday in February: false
-      ky:
+      KY:
         name: Kentucky
         zones:
           - America/Kentucky/Louisville
@@ -6326,7 +6382,7 @@ holidays:
             _name: 12-24
           12-31:
             _name: 12-31
-      la:
+      LA:
         name: Louisiana
         zones:
           - America/Chicago
@@ -6337,14 +6393,14 @@ holidays:
             name:
               en: Election Day
         regions:
-          no:
+          NO:
             name: New Orleans
             days:
               easter -47:
                 _name: easter -47
                 name:
                   en: Mardi Gras
-      me:
+      ME:
         name: Maine
         zones:
           - America/New_York
@@ -6352,7 +6408,7 @@ holidays:
           3rd monday in April:
             name:
               en: Patriots' Day
-      md:
+      MD:
         name: Maryland
         zones:
           - America/New_York
@@ -6363,7 +6419,7 @@ holidays:
           friday after 4th thursday in November:
             name:
               en: Native American Heritage Day
-      ma:
+      MA:
         name: Massachusetts
         zones:
           - America/Chicago
@@ -6377,7 +6433,7 @@ holidays:
           06-17:
             name:
               en: Bunker Hill Day
-      mi:
+      MI:
         name: Michigan
         zones:
           - America/Detroit
@@ -6387,12 +6443,12 @@ holidays:
             _name: 12-24
           12-31:
             _name: 12-31
-      mn:
+      MN:
         name: Minnesota
         zones:
           - America/Chicago
         # all federal holidays
-      ms:
+      MS:
         name: Mississippi
         zones:
           - America/Chicago
@@ -6403,7 +6459,7 @@ holidays:
           monday before 05-01:
             name:
               en: Confederate Memorial Day
-      mo:
+      MO:
         name: Missouri
         zones:
           - America/Chicago
@@ -6411,7 +6467,7 @@ holidays:
           05-08:
             name:
               en: Truman Day
-      mt:
+      MT:
         name: Montana
         zones:
           - America/Denver
@@ -6423,7 +6479,7 @@ holidays:
             _name: 12-24
           12-31:
             _name: 12-31
-      ne:
+      NE:
         name: Nebraska
         zones:
           - America/Chicago
@@ -6432,7 +6488,7 @@ holidays:
           friday before 05-01:
             name:
               en: Arbor Day
-      nv:
+      NV:
         name: Nevada
         zones:
           - America/Los_Angeles
@@ -6444,7 +6500,7 @@ holidays:
           4th friday in November:
             name:
               en: Family Day
-      nh:
+      NH:
         name: New Hampshire
         zones:
           - America/New_York
@@ -6460,7 +6516,7 @@ holidays:
           friday after 4th thursday in November:
             name:
               en: Day after Thanksgiving
-      nj:
+      NJ:
         name: New Jersey
         zones:
           - America/New_York
@@ -6473,7 +6529,7 @@ holidays:
           tuesday after 1st monday in November:
             name:
               en: Election Day
-      nm:
+      NM:
         name: New Mexico
         zones:
           - America/Denver
@@ -6482,7 +6538,7 @@ holidays:
           friday after 4th thursday in November:
             name:
               en: Day after Thanksgiving
-      ny:
+      NY:
         name: New York
         zones:
           - America/New_York
@@ -6496,7 +6552,7 @@ holidays:
           tuesday after 1st monday in November:
             name:
               en: Election Day
-      nc:
+      NC:
         name: North Carolina
         zones:
           - America/New_York
@@ -6511,19 +6567,19 @@ holidays:
           12-24 and if friday then previous thursday if saturday,sunday then previous friday:
             substitute: true
             _name: 12-24
-      nd:
+      ND:
         name: North Dakota
         zones:
           - America/North_Dakota/Center
           - America/North_Dakota/New_Salem
           - America/North_Dakota/Beulah
         # All federal holidays
-      oh:
+      OH:
         name: Ohio
         zones:
           - America/New_York
         # All federal holidays
-      ok:
+      OK:
         name: Oklahoma
         zones:
           - America/Chicago
@@ -6531,12 +6587,12 @@ holidays:
           friday after 4th thursday in November:
             name:
               en: Day after Thanksgiving
-      or:
+      OR:
         name: Oregon
         zones:
           - America/Los_Angeles
         # All federal holidays
-      pa:
+      PA:
         name: Pennsylvania
         zones:
           - America/New_York
@@ -6544,7 +6600,7 @@ holidays:
           06-14:
             name:
               en: Flag Day
-      ri:
+      RI:
         name: Rhode Island
         zones:
           - America/New_York
@@ -6552,7 +6608,7 @@ holidays:
           2nd monday in August:
             name:
               en: Victory Day
-      sc:
+      SC:
         name: South Carolina
         zones:
           - America/New_York
@@ -6562,12 +6618,12 @@ holidays:
               en: Confederate Memorial Day
           12-26:
             _name: 12-26
-      sd:
+      SD:
         name: South Dakota
         zones:
           - America/Chicago
           - America/Denver
-      tn:
+      TN:
         name: Tennessee
         zones:
           - America/Chicago
@@ -6579,7 +6635,7 @@ holidays:
             _name: 12-24
       # @source http://www.hr.sao.state.tx.us/compensation/Holidays2015.pdf
       # @source http://www.hr.sao.state.tx.us/compensation/Holidays2016_2017.pdf
-      tx:
+      TX:
         name: Texas
         zones:
           - America/Chicago
@@ -6626,7 +6682,7 @@ holidays:
             _name: 12-26
             name:
               en: Day after Christmas
-      ut:
+      UT:
         name: Utah
         zones:
           - America/Denver
@@ -6634,7 +6690,7 @@ holidays:
           07-24:
             name:
               en: Pioneer Day
-      vt:
+      VT:
         name: Vermont
         zones:
           - America/New_York
@@ -6645,7 +6701,7 @@ holidays:
           3rd monday in August:
             name:
               en: Bennington Battle Day
-      va:
+      VA:
         name: Virginia
         zones:
           - America/New_York
@@ -6653,12 +6709,12 @@ holidays:
           friday before 3rd monday in January:
             name:
               en: Lee–Jackson Day
-      wa:
+      WA:
         name: Washington
         zones:
           - America/Los_Angeles
         # All federal holidays
-      wv:
+      WV:
         name: West Virginia
         zones:
           - America/New_York
@@ -6672,7 +6728,7 @@ holidays:
           4th friday in November:
             name:
               en: Lincoln's Day
-      wi:
+      WI:
         name: Wisconsin
         zones:
           - America/Chicago
@@ -6686,7 +6742,7 @@ holidays:
           tuesday after 1st monday in November:
             name:
               en: Election Day
-      wy:
+      WY:
         name: Wyoming
         zones:
           - America/Denver

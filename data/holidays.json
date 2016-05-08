@@ -79,7 +79,7 @@
         }
       },
       "regions": {
-        "vella": {
+        "07": {
           "name": "Andorra la Vella",
           "days": {
             "1st saturday in August P3D": {
@@ -508,7 +508,7 @@
         }
       },
       "states": {
-        "b": {
+        "1": {
           "name": "Burgenland",
           "days": {
             "11-11": {
@@ -518,7 +518,7 @@
             }
           }
         },
-        "k": {
+        "2": {
           "name": "Kärnten",
           "days": {
             "03-19": {
@@ -531,7 +531,7 @@
             }
           }
         },
-        "n": {
+        "3": {
           "name": "Niederösterreich",
           "days": {
             "11-15": {
@@ -541,7 +541,7 @@
             }
           }
         },
-        "o": {
+        "4": {
           "name": "Oberösterreich",
           "days": {
             "05-04": {
@@ -551,7 +551,7 @@
             }
           }
         },
-        "s": {
+        "5": {
           "name": "Land Salzburg",
           "days": {
             "09-24": {
@@ -561,7 +561,7 @@
             }
           }
         },
-        "st": {
+        "6": {
           "name": "Steiermark",
           "days": {
             "03-19": {
@@ -569,7 +569,7 @@
             }
           }
         },
-        "t": {
+        "7": {
           "name": "Tirol",
           "days": {
             "03-19": {
@@ -577,7 +577,7 @@
             }
           }
         },
-        "v": {
+        "8": {
           "name": "Vorarlberg",
           "days": {
             "03-19": {
@@ -585,7 +585,7 @@
             }
           }
         },
-        "w": {
+        "9": {
           "name": "Wien",
           "days": {
             "11-15": {
@@ -677,7 +677,7 @@
         }
       },
       "states": {
-        "act": {
+        "ACT": {
           "name": "Australian Capital Territory",
           "zones": [
             "Australia/Sydney"
@@ -702,7 +702,7 @@
             }
           }
         },
-        "nsw": {
+        "NSW": {
           "name": "New South Wales",
           "zones": [
             "Australia/Sydney"
@@ -719,7 +719,7 @@
             }
           }
         },
-        "nt": {
+        "NT": {
           "name": "Northern Territory",
           "zones": [
             "Australia/Darwin"
@@ -737,7 +737,7 @@
             }
           }
         },
-        "qld": {
+        "QLD": {
           "name": "Queensland",
           "zones": [
             "Australia/Brisbane",
@@ -751,7 +751,7 @@
             }
           }
         },
-        "sa": {
+        "SA": {
           "name": "South Australia",
           "zones": [
             "Australia/Adelaide"
@@ -772,7 +772,7 @@
             }
           }
         },
-        "tas": {
+        "TAS": {
           "name": "Tasmania",
           "zones": [
             "Australia/Hobart"
@@ -795,7 +795,7 @@
             }
           },
           "regions": {
-            "h": {
+            "H": {
               "name": "Hobart",
               "days": {
                 "2nd monday in February": {
@@ -805,7 +805,7 @@
                 }
               }
             },
-            "nh": {
+            "NH": {
               "name": "Non-Hobart",
               "days": {
                 "1st monday in November": {
@@ -817,7 +817,7 @@
             }
           }
         },
-        "vic": {
+        "VIC": {
           "name": "Victoria",
           "zones": [
             "Australia/Melbourne"
@@ -839,7 +839,7 @@
             }
           },
           "regions": {
-            "m": {
+            "M": {
               "name": "Melbourne",
               "days": {
                 "1st tuesday in November": {
@@ -851,7 +851,7 @@
             }
           }
         },
-        "wa": {
+        "WA": {
           "name": "Western Australia",
           "zones": [
             "Australia/Perth",
@@ -972,7 +972,22 @@
         }
       },
       "states": {
-        "de": {
+        "BRU": {
+          "name": "Bruxelles",
+          "langs": [
+            "fr",
+            "nl"
+          ],
+          "days": {
+            "05-08": {
+              "name": {
+                "nl": "Feest van de Iris",
+                "fr": "Fête de l'Iris"
+              }
+            }
+          }
+        },
+        "DE": {
           "name": "Deutschsprachige Gemeinschaft",
           "langs": [
             "de"
@@ -987,35 +1002,7 @@
             }
           }
         },
-        "fr": {
-          "name": "Communauté française",
-          "langs": [
-            "fr"
-          ],
-          "days": {
-            "09-27": {
-              "name": {
-                "de": "Tag der Französischsprachigen Gemeinschaft",
-                "fr": "La fête de la communauté française",
-                "nl": "Feestdag van de Franse Gemeenschap"
-              }
-            }
-          },
-          "regions": {
-            "br": {
-              "name": "Bruxelles",
-              "days": {
-                "05-08": {
-                  "name": {
-                    "nl": "Feest van de Iris",
-                    "fr": "Fête de l'Iris"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "vl": {
+        "VLG": {
           "name": "Vlaamse Gemeenschap",
           "langs": [
             "nl"
@@ -1026,6 +1013,21 @@
                 "de": "Festtag der Wallonischen Region",
                 "fr": "Fête de la Région wallonne",
                 "nl": "Feestdag van de Vlaamse Gemeenschap"
+              }
+            }
+          }
+        },
+        "WAL": {
+          "name": "Communauté française",
+          "langs": [
+            "fr"
+          ],
+          "days": {
+            "09-27": {
+              "name": {
+                "de": "Tag der Französischsprachigen Gemeinschaft",
+                "fr": "La fête de la communauté française",
+                "nl": "Feestdag van de Franse Gemeenschap"
               }
             }
           }
@@ -1927,10 +1929,10 @@
         }
       },
       "states": {
-        "zh": {
+        "ZH": {
           "name": "Kanton Zürich"
         },
-        "be": {
+        "BE": {
           "name": "Kanton Bern",
           "days": {
             "01-02": {
@@ -1940,7 +1942,7 @@
             }
           }
         },
-        "lu": {
+        "LU": {
           "name": "Kanton Luzern",
           "days": {
             "03-19": {
@@ -1957,7 +1959,7 @@
             }
           }
         },
-        "ur": {
+        "UR": {
           "name": "Kanton Uri",
           "days": {
             "01-06": {
@@ -1977,7 +1979,7 @@
             }
           }
         },
-        "sz": {
+        "SZ": {
           "name": "Kanton Schwyz",
           "days": {
             "01-06": {
@@ -1997,7 +1999,7 @@
             }
           }
         },
-        "ow": {
+        "OW": {
           "name": "Kanton Obwalden",
           "days": {
             "easter 60": {
@@ -2011,7 +2013,7 @@
             }
           }
         },
-        "nw": {
+        "NW": {
           "name": "Kanton Nidwalden",
           "days": {
             "03-19": {
@@ -2025,7 +2027,7 @@
             }
           }
         },
-        "gl": {
+        "GL": {
           "name": "Kanton Glarus",
           "days": {
             "08-15": {
@@ -2036,7 +2038,7 @@
             }
           }
         },
-        "zg": {
+        "ZG": {
           "name": "Kanton Zug",
           "days": {
             "03-19": {
@@ -2053,7 +2055,7 @@
             }
           }
         },
-        "fr": {
+        "FR": {
           "name": "Kanton Freiburg",
           "days": {
             "easter 60": {
@@ -2067,7 +2069,7 @@
             }
           }
         },
-        "so": {
+        "SO": {
           "name": "Kanton Solothurn",
           "days": {
             "easter 60": {
@@ -2081,10 +2083,10 @@
             }
           }
         },
-        "bs": {
+        "BS": {
           "name": "Kanton Basel-Stadt"
         },
-        "bl": {
+        "BL": {
           "name": "Kanton Basel-Landschaft",
           "days": {
             "easter 60": {
@@ -2092,13 +2094,13 @@
             }
           }
         },
-        "sh": {
+        "SH": {
           "name": "Kanton Schaffhausen"
         },
-        "ar": {
+        "AR": {
           "name": "Kanton Appenzell Ausserrhoden"
         },
-        "ai": {
+        "AI": {
           "name": "Kanton Appenzell Innerrhoden",
           "days": {
             "easter 60": {
@@ -2112,7 +2114,7 @@
             }
           }
         },
-        "sg": {
+        "SG": {
           "name": "Kanton St. Gallen",
           "days": {
             "08-15": {
@@ -2123,7 +2125,7 @@
             }
           }
         },
-        "gr": {
+        "GR": {
           "name": "Kanton Graubünden",
           "days": {
             "01-06": {
@@ -2143,7 +2145,7 @@
             }
           }
         },
-        "ag": {
+        "AG": {
           "name": "Kanton Aargau",
           "days": {
             "01-02": {
@@ -2162,7 +2164,7 @@
             }
           }
         },
-        "tg": {
+        "TG": {
           "name": "Kanton Thurgau",
           "days": {
             "01-02": {
@@ -2172,7 +2174,7 @@
             }
           }
         },
-        "ti": {
+        "TI": {
           "name": "Kanton Tessin",
           "days": {
             "01-06": {
@@ -2194,7 +2196,7 @@
             "12-26": false
           }
         },
-        "vd": {
+        "VD": {
           "name": "Kanton Waadt",
           "days": {
             "01-02": {
@@ -2205,7 +2207,7 @@
             "12-26": false
           }
         },
-        "vs": {
+        "VS": {
           "name": "Kanton Wallis",
           "days": {
             "03-19": {
@@ -2226,7 +2228,7 @@
             "12-26": false
           }
         },
-        "ne": {
+        "NE": {
           "name": "Kanton Neuenburg",
           "days": {
             "easter 60": {
@@ -2235,13 +2237,13 @@
             "12-26": false
           }
         },
-        "ge": {
+        "GE": {
           "name": "Kanton Genf",
           "days": {
             "12-26": false
           }
         },
-        "ju": {
+        "JU": {
           "name": "Kanton Jura",
           "days": {
             "01-02": {
@@ -2342,9 +2344,9 @@
           "type": "bank"
         }
       },
-      "regions": {
-        "ar": {
-          "name": "Arica",
+      "states": {
+        "AP": {
+          "name": "Arica y Parinacota",
           "days": {
             "06-07": {
               "name": {
@@ -2354,29 +2356,23 @@
             }
           }
         },
-        "ch": {
-          "name": "Chillán y Chillán Viejo",
-          "days": {
-            "08-20": {
-              "name": {
-                "en": "Nativity of Liberator Bernardo O'Higgins",
-                "es": "Nacimiento del Prócer de la Independencia"
+        "BI": {
+          "name": "Biobío",
+          "regions": {
+            "CH": {
+              "name": "Chillán y Chillán Viejo",
+              "days": {
+                "08-20": {
+                  "name": {
+                    "en": "Nativity of Liberator Bernardo O'Higgins",
+                    "es": "Nacimiento del Prócer de la Independencia"
+                  }
+                }
               }
             }
           }
         },
-        "pa": {
-          "name": "Parinacota",
-          "days": {
-            "06-07": {
-              "name": {
-                "en": "Battle of Arica",
-                "es": "Asalto y Toma del Morro de Arica"
-              }
-            }
-          }
-        },
-        "ta": {
+        "TA": {
           "name": "Tarapacá",
           "days": {
             "08-10": {
@@ -3067,7 +3063,7 @@
         }
       },
       "states": {
-        "bb": {
+        "BB": {
           "name": "Brandenburg",
           "days": {
             "10-31": {
@@ -3075,7 +3071,7 @@
             }
           }
         },
-        "bw": {
+        "BW": {
           "name": "Baden Würtemberg",
           "days": {
             "01-06": {
@@ -3089,7 +3085,7 @@
             }
           }
         },
-        "by": {
+        "BY": {
           "name": "Bayern",
           "days": {
             "01-06": {
@@ -3110,7 +3106,7 @@
             }
           },
           "regions": {
-            "a": {
+            "A": {
               "name": "Stadt Augsburg",
               "days": {
                 "08-08": {
@@ -3123,7 +3119,7 @@
             }
           }
         },
-        "hb": {
+        "HB": {
           "name": "Hansestadt Bremen",
           "days": {
             "12-31 14:00 if sunday then 00:00": {
@@ -3132,7 +3128,7 @@
             }
           }
         },
-        "he": {
+        "HE": {
           "name": "Hessen",
           "days": {
             "easter 60": {
@@ -3143,10 +3139,10 @@
             }
           }
         },
-        "hh": {
+        "HH": {
           "name": "Hansestadt Hamburg"
         },
-        "mv": {
+        "MV": {
           "name": "Mecklenburg Vorpommern",
           "days": {
             "10-31": {
@@ -3154,10 +3150,10 @@
             }
           }
         },
-        "ni": {
+        "NI": {
           "name": "Niedersachsen"
         },
-        "nw": {
+        "NW": {
           "name": "Nordrhein-Westfalen",
           "days": {
             "easter 60": {
@@ -3168,7 +3164,7 @@
             }
           }
         },
-        "rp": {
+        "RP": {
           "name": "Rheinland-Pfalz",
           "days": {
             "easter 60": {
@@ -3179,10 +3175,10 @@
             }
           }
         },
-        "sh": {
+        "SH": {
           "name": "Schleswig-Holstein"
         },
-        "sl": {
+        "SL": {
           "name": "Saarland",
           "days": {
             "easter 60": {
@@ -3196,7 +3192,7 @@
             }
           }
         },
-        "sn": {
+        "SN": {
           "name": "Sachsen",
           "days": {
             "10-31": {
@@ -3207,7 +3203,7 @@
             }
           }
         },
-        "st": {
+        "ST": {
           "name": "Sachsen-Anhalt",
           "days": {
             "01-06": {
@@ -3218,7 +3214,7 @@
             }
           }
         },
-        "th": {
+        "TH": {
           "name": "Thüringen",
           "days": {
             "10-31": {
@@ -3382,16 +3378,21 @@
           "type": "observance"
         }
       },
-      "regions": {
-        "qu": {
-          "name": "Quito",
-          "days": {
-            "12-06": {
-              "name": {
-                "en": "Foundation of Quito",
-                "es": "Aniversario de la fundación de Quito"
-              },
-              "type": "observance"
+      "states": {
+        "P": {
+          "name": "Pichincha",
+          "regions": {
+            "QU": {
+              "name": "Quito",
+              "days": {
+                "12-06": {
+                  "name": {
+                    "en": "Foundation of Quito",
+                    "es": "Aniversario de la fundación de Quito"
+                  },
+                  "type": "observance"
+                }
+              }
             }
           }
         }
@@ -3637,7 +3638,7 @@
         }
       },
       "states": {
-        "madrid": {
+        "MD": {
           "name": "Comunidad de Madrid",
           "days": {
             "05-16": {
@@ -3872,40 +3873,50 @@
         }
       },
       "states": {
-        "basrhin": {
-          "name": "Département Bas-Rhin",
-          "days": {
-            "easter -2": {
-              "_name": "easter -2"
+        "A": {
+          "name": "Alsace",
+          "regions": {
+            "67": {
+              "name": "Département Bas-Rhin",
+              "days": {
+                "easter -2": {
+                  "_name": "easter -2"
+                },
+                "12-26": {
+                  "_name": "12-26"
+                }
+              }
             },
-            "12-26": {
-              "_name": "12-26"
+            "68": {
+              "name": "Département Haut-Rhin",
+              "days": {
+                "easter -2": {
+                  "_name": "easter -2"
+                },
+                "12-26": {
+                  "_name": "12-26"
+                }
+              }
             }
           }
         },
-        "hautrhin": {
-          "name": "Département Haut-Rhin",
-          "days": {
-            "easter -2": {
-              "_name": "easter -2"
-            },
-            "12-26": {
-              "_name": "12-26"
+        "M": {
+          "name": "Lorraine",
+          "regions": {
+            "57": {
+              "name": "Département Moselle",
+              "days": {
+                "easter -2": {
+                  "_name": "easter -2"
+                },
+                "12-26": {
+                  "_name": "12-26"
+                }
+              }
             }
           }
         },
-        "moselle": {
-          "name": "Département Moselle",
-          "days": {
-            "easter -2": {
-              "_name": "easter -2"
-            },
-            "12-26": {
-              "_name": "12-26"
-            }
-          }
-        },
-        "mayotte": {
+        "YT": {
           "name": "Département et région d'outre-mer Mayotte",
           "zones": [
             "Indian/Mayotte"
@@ -3916,7 +3927,7 @@
             }
           }
         },
-        "martinique": {
+        "MQ": {
           "name": "Département et région d'outre-mer Martinique",
           "zones": [
             "America/Martinique"
@@ -3930,7 +3941,7 @@
             }
           }
         },
-        "guadeloupe": {
+        "GP": {
           "name": "Département et région d'outre-mer Guadeloupe",
           "zones": [
             "America/Guadeloupe"
@@ -3944,7 +3955,7 @@
             }
           }
         },
-        "guyane": {
+        "GF": {
           "name": "Département et région d'outre-mer Guyane",
           "zones": [
             "America/Guyana"
@@ -3955,7 +3966,7 @@
             }
           }
         },
-        "reunion": {
+        "RE": {
           "name": "Département et région d'outre-mer La Réunion",
           "zones": [
             "Indian/Reunion"
@@ -4021,7 +4032,7 @@
     },
     "GB": {
       "names": {
-        "en": "Britain"
+        "en": "United Kingdom"
       },
       "dayoff": "sunday",
       "zones": [
@@ -4094,7 +4105,7 @@
         }
       },
       "states": {
-        "al": {
+        "ALD": {
           "name": "Alderney",
           "zones": [
             "Europe/Guernsey"
@@ -4107,7 +4118,7 @@
             }
           }
         },
-        "en": {
+        "ENG": {
           "name": "England",
           "days": {
             "1st monday before 09-01": {
@@ -4117,51 +4128,7 @@
             }
           }
         },
-        "gu": {
-          "name": "Guernsey",
-          "zones": [
-            "Europe/Guernsey"
-          ],
-          "days": {
-            "05-09": {
-              "name": {
-                "en": "Liberation Day"
-              }
-            }
-          }
-        },
-        "im": {
-          "name": "Isle of Man",
-          "zones": [
-            "Europe/Isle_of_Man"
-          ],
-          "days": {
-            "2nd friday in June": {
-              "name": {
-                "en": "Tourist Trophy, Senior Race Day"
-              }
-            },
-            "07-05": {
-              "name": {
-                "en": "Tynwald Day"
-              }
-            }
-          }
-        },
-        "je": {
-          "name": "Jersey",
-          "zones": [
-            "Europe/Jersey"
-          ],
-          "days": {
-            "05-09": {
-              "name": {
-                "en": "Liberation Day"
-              }
-            }
-          }
-        },
-        "ni": {
+        "NIR": {
           "name": "Northern Ireland",
           "zones": [
             "Europe/Belfast"
@@ -4203,7 +4170,7 @@
             }
           }
         },
-        "sc": {
+        "SCT": {
           "name": "Scottland",
           "days": {
             "substitutes 01-01 if sunday then next monday": false,
@@ -4248,7 +4215,7 @@
             }
           }
         },
-        "wa": {
+        "WLS": {
           "name": "Wales",
           "days": {
             "1st monday before 09-01": {
@@ -4350,6 +4317,28 @@
         },
         "12-26": {
           "_name": "12-26"
+        }
+      }
+    },
+    "GG": {
+      "names": {
+        "en": "Guernsey"
+      },
+      "dayoff": "sunday",
+      "zones": [
+        "Europe/Guernsey"
+      ],
+      "langs": [
+        "en"
+      ],
+      "_days": [
+        "GB"
+      ],
+      "days": {
+        "05-09": {
+          "name": {
+            "en": "Liberation Day"
+          }
         }
       }
     },
@@ -4745,8 +4734,8 @@
         }
       },
       "regions": {
-        "split": {
-          "name": "Split",
+        "17": {
+          "name": "Split-Dalmatia",
           "days": {
             "05-07": {
               "name": {
@@ -4756,8 +4745,8 @@
             }
           }
         },
-        "dubrovnik": {
-          "name": "Dubrovnik",
+        "19": {
+          "name": "Dubrovnik-Neretva",
           "days": {
             "02-03": {
               "name": {
@@ -5061,6 +5050,32 @@
         }
       }
     },
+    "IM": {
+      "names": {
+        "en": "Isle of Man"
+      },
+      "zones": [
+        "Europe/Isle_of_Man"
+      ],
+      "langs": [
+        "en"
+      ],
+      "_days": [
+        "GB"
+      ],
+      "days": {
+        "2nd friday in June": {
+          "name": {
+            "en": "Tourist Trophy, Senior Race Day"
+          }
+        },
+        "07-05": {
+          "name": {
+            "en": "Tynwald Day"
+          }
+        }
+      }
+    },
     "IT": {
       "names": {
         "it": "Italia",
@@ -5128,7 +5143,7 @@
         }
       },
       "states": {
-        "suedtirol": {
+        "32": {
           "name": "Südtirol, Alto Adige",
           "days": {
             "easter 50": {
@@ -5276,6 +5291,27 @@
         },
         "12-31 13:00 if sunday then 00:00": {
           "_name": "12-31"
+        }
+      }
+    },
+    "JE": {
+      "names": {
+        "en": "Jersey"
+      },
+      "zones": [
+        "Europe/Jersey"
+      ],
+      "langs": [
+        "en"
+      ],
+      "_days": [
+        "GB"
+      ],
+      "days": {
+        "05-09": {
+          "name": {
+            "en": "Liberation Day"
+          }
         }
       }
     },
@@ -6907,7 +6943,7 @@
         }
       },
       "states": {
-        "au": {
+        "AUK": {
           "name": "Auckland Province",
           "days": {
             "01-29 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday": {
@@ -6917,7 +6953,7 @@
             }
           }
         },
-        "ca": {
+        "CAN": {
           "name": "Canterbury",
           "days": {
             "12-16": {
@@ -6925,9 +6961,22 @@
                 "en": "Christchurch Show Day"
               }
             }
+          },
+          "regions": {
+            "S": {
+              "name": "South Canterbury",
+              "days": {
+                "12-16": false,
+                "4th monday in September": {
+                  "name": {
+                    "en": "Dominion Day"
+                  }
+                }
+              }
+            }
           }
         },
-        "ch": {
+        "CIT": {
           "name": "Chatham Islands",
           "days": {
             "11-30 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday": {
@@ -6937,7 +6986,7 @@
             }
           }
         },
-        "ha": {
+        "HKB": {
           "name": "Hawke's Bay",
           "days": {
             "friday before 4th monday in October": {
@@ -6947,7 +6996,7 @@
             }
           }
         },
-        "ma": {
+        "MBH": {
           "name": "Marlborough",
           "days": {
             "5th monday in October": {
@@ -6957,7 +7006,7 @@
             }
           }
         },
-        "ne": {
+        "NSN": {
           "name": "Nelson",
           "days": {
             "02-01 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday": {
@@ -6967,7 +7016,7 @@
             }
           }
         },
-        "no": {
+        "NTL": {
           "name": "Northland",
           "days": {
             "01-29 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday": {
@@ -6977,7 +7026,7 @@
             }
           }
         },
-        "ot": {
+        "OTA": {
           "name": "Otago Province",
           "days": {
             "03-23 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday": {
@@ -6988,17 +7037,7 @@
             }
           }
         },
-        "sc": {
-          "name": "South Canterbury",
-          "days": {
-            "4th monday in September": {
-              "name": {
-                "en": "Dominion Day"
-              }
-            }
-          }
-        },
-        "so": {
+        "STL": {
           "name": "Southland",
           "days": {
             "easter 2": {
@@ -7008,7 +7047,7 @@
             }
           }
         },
-        "ta": {
+        "TKI": {
           "name": "Taranaki",
           "days": {
             "2nd monday in March": {
@@ -7018,7 +7057,7 @@
             }
           }
         },
-        "we": {
+        "WGN": {
           "name": "Wellington Province",
           "days": {
             "01-22 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday": {
@@ -7028,7 +7067,7 @@
             }
           }
         },
-        "wd": {
+        "WTC": {
           "name": "Westland",
           "days": {
             "12-01 if tuesday,wednesday,thursday then previous monday if friday,saturday,sunday then next monday": {
@@ -7171,7 +7210,7 @@
         }
       },
       "regions": {
-        "cu": {
+        "CUS": {
           "name": "Cuzco",
           "days": {
             "06-24": {
@@ -7826,8 +7865,8 @@
         }
       },
       "states": {
-        "som": {
-          "name": "Somaliland",
+        "AW": {
+          "name": "Awdal",
           "days": {
             "01-01": false,
             "05-18 P2D": {
@@ -7844,6 +7883,38 @@
               "_name": "27 Rajab"
             }
           }
+        },
+        "SA": {
+          "name": "Sanaag",
+          "_days": [
+            "SO",
+            "states",
+            "AW"
+          ]
+        },
+        "SO": {
+          "name": "Sool",
+          "_days": [
+            "SO",
+            "states",
+            "AW"
+          ]
+        },
+        "TO": {
+          "name": "Togdheer",
+          "_days": [
+            "SO",
+            "states",
+            "AW"
+          ]
+        },
+        "WO": {
+          "name": "Woqooyi Galbeed",
+          "_days": [
+            "SO",
+            "states",
+            "AW"
+          ]
         }
       }
     },
@@ -7990,7 +8061,7 @@
         }
       },
       "regions": {
-        "san": {
+        "SS": {
           "name": "San Salvador",
           "days": {
             "08-03": {
@@ -8333,7 +8404,7 @@
         }
       },
       "states": {
-        "an": {
+        "B": {
           "name": "Anzoátegui",
           "days": {
             "11-14": {
@@ -8343,7 +8414,7 @@
             }
           }
         },
-        "ca": {
+        "G": {
           "name": "Carabobo",
           "days": {
             "11-13": {
@@ -8353,7 +8424,7 @@
             }
           }
         },
-        "la": {
+        "K": {
           "name": "Lara",
           "days": {
             "01-14": {
@@ -8368,7 +8439,7 @@
             }
           },
           "regions": {
-            "ba": {
+            "BA": {
               "name": "Barquisimeto",
               "days": {
                 "09-14": {
@@ -8380,7 +8451,7 @@
             }
           }
         },
-        "mi": {
+        "M": {
           "name": "Miranda",
           "days": {
             "03-19": {
@@ -8388,7 +8459,7 @@
             }
           }
         },
-        "mo": {
+        "N": {
           "name": "Monagas",
           "days": {
             "12-07": {
@@ -8398,7 +8469,7 @@
             }
           }
         },
-        "ta": {
+        "S": {
           "name": "Táchira",
           "days": {
             "08-15": {
@@ -8409,7 +8480,7 @@
             }
           }
         },
-        "zu": {
+        "V": {
           "name": "Zulia",
           "days": {
             "10-24": {
@@ -8631,7 +8702,7 @@
         }
       },
       "states": {
-        "al": {
+        "AL": {
           "name": "Alabama",
           "zones": [
             "America/Chicago"
@@ -8659,7 +8730,7 @@
             }
           }
         },
-        "ak": {
+        "AK": {
           "name": "Alaska",
           "zones": [
             "America/Anchorage",
@@ -8683,7 +8754,7 @@
             }
           }
         },
-        "az": {
+        "AZ": {
           "name": "Arizona",
           "zones": [
             "America/Phoenix",
@@ -8697,7 +8768,7 @@
             }
           }
         },
-        "ar": {
+        "AR": {
           "name": "Arkansas",
           "zones": [
             "America/Chicago"
@@ -8718,7 +8789,7 @@
             }
           }
         },
-        "ca": {
+        "CA": {
           "name": "California",
           "zones": [
             "America/Los_Angeles"
@@ -8747,7 +8818,7 @@
             }
           }
         },
-        "co": {
+        "CO": {
           "name": "Colorado",
           "zones": [
             "America/Denver"
@@ -8758,7 +8829,7 @@
             }
           }
         },
-        "ct": {
+        "CT": {
           "name": "Connecticut",
           "zones": [
             "America/New_York"
@@ -8774,7 +8845,7 @@
             }
           }
         },
-        "de": {
+        "DE": {
           "name": "Delaware",
           "days": {
             "2nd monday in October": false,
@@ -8794,7 +8865,7 @@
             }
           }
         },
-        "dc": {
+        "DC": {
           "name": "District of Columbia",
           "days": {
             "04-16": {
@@ -8804,7 +8875,7 @@
             }
           }
         },
-        "fl": {
+        "FL": {
           "name": "Florida",
           "days": {
             "2nd monday in October": false,
@@ -8821,7 +8892,7 @@
             }
           }
         },
-        "ga": {
+        "GA": {
           "name": "Georgia",
           "days": {
             "3rd monday in February": false,
@@ -8848,7 +8919,7 @@
             }
           }
         },
-        "hi": {
+        "HI": {
           "name": "Hawaii",
           "zones": [
             "Pacific/Honolulu"
@@ -8877,7 +8948,7 @@
             }
           }
         },
-        "id": {
+        "ID": {
           "name": "Idaho",
           "zones": [
             "America/Boise",
@@ -8891,7 +8962,7 @@
             }
           }
         },
-        "il": {
+        "IL": {
           "name": "Illinois",
           "zones": [
             "America/Chicago"
@@ -8919,7 +8990,7 @@
             }
           }
         },
-        "in": {
+        "IN": {
           "name": "Indiana",
           "zones": [
             "America/Indiana/Indianapolis",
@@ -8952,7 +9023,7 @@
             }
           }
         },
-        "ia": {
+        "IA": {
           "name": "Iowa",
           "zones": [
             "America/Chicago"
@@ -8965,7 +9036,7 @@
             }
           }
         },
-        "ks": {
+        "KS": {
           "name": "Kansas",
           "zones": [
             "America/Chicago",
@@ -8975,7 +9046,7 @@
             "3rd monday in February": false
           }
         },
-        "ky": {
+        "KY": {
           "name": "Kentucky",
           "zones": [
             "America/Kentucky/Louisville",
@@ -8994,7 +9065,7 @@
             }
           }
         },
-        "la": {
+        "LA": {
           "name": "Louisiana",
           "zones": [
             "America/Chicago"
@@ -9010,7 +9081,7 @@
             }
           },
           "regions": {
-            "no": {
+            "NO": {
               "name": "New Orleans",
               "days": {
                 "easter -47": {
@@ -9023,7 +9094,7 @@
             }
           }
         },
-        "me": {
+        "ME": {
           "name": "Maine",
           "zones": [
             "America/New_York"
@@ -9036,7 +9107,7 @@
             }
           }
         },
-        "md": {
+        "MD": {
           "name": "Maryland",
           "zones": [
             "America/New_York"
@@ -9054,7 +9125,7 @@
             }
           }
         },
-        "ma": {
+        "MA": {
           "name": "Massachusetts",
           "zones": [
             "America/Chicago"
@@ -9077,7 +9148,7 @@
             }
           }
         },
-        "mi": {
+        "MI": {
           "name": "Michigan",
           "zones": [
             "America/Detroit",
@@ -9092,13 +9163,13 @@
             }
           }
         },
-        "mn": {
+        "MN": {
           "name": "Minnesota",
           "zones": [
             "America/Chicago"
           ]
         },
-        "ms": {
+        "MS": {
           "name": "Mississippi",
           "zones": [
             "America/Chicago"
@@ -9116,7 +9187,7 @@
             }
           }
         },
-        "mo": {
+        "MO": {
           "name": "Missouri",
           "zones": [
             "America/Chicago"
@@ -9129,7 +9200,7 @@
             }
           }
         },
-        "mt": {
+        "MT": {
           "name": "Montana",
           "zones": [
             "America/Denver"
@@ -9148,7 +9219,7 @@
             }
           }
         },
-        "ne": {
+        "NE": {
           "name": "Nebraska",
           "zones": [
             "America/Chicago",
@@ -9162,7 +9233,7 @@
             }
           }
         },
-        "nv": {
+        "NV": {
           "name": "Nevada",
           "zones": [
             "America/Los_Angeles"
@@ -9181,7 +9252,7 @@
             }
           }
         },
-        "nh": {
+        "NH": {
           "name": "New Hampshire",
           "zones": [
             "America/New_York"
@@ -9207,7 +9278,7 @@
             }
           }
         },
-        "nj": {
+        "NJ": {
           "name": "New Jersey",
           "zones": [
             "America/New_York"
@@ -9228,7 +9299,7 @@
             }
           }
         },
-        "nm": {
+        "NM": {
           "name": "New Mexico",
           "zones": [
             "America/Denver"
@@ -9242,7 +9313,7 @@
             }
           }
         },
-        "ny": {
+        "NY": {
           "name": "New York",
           "zones": [
             "America/New_York"
@@ -9265,7 +9336,7 @@
             }
           }
         },
-        "nc": {
+        "NC": {
           "name": "North Carolina",
           "zones": [
             "America/New_York"
@@ -9287,7 +9358,7 @@
             }
           }
         },
-        "nd": {
+        "ND": {
           "name": "North Dakota",
           "zones": [
             "America/North_Dakota/Center",
@@ -9295,13 +9366,13 @@
             "America/North_Dakota/Beulah"
           ]
         },
-        "oh": {
+        "OH": {
           "name": "Ohio",
           "zones": [
             "America/New_York"
           ]
         },
-        "ok": {
+        "OK": {
           "name": "Oklahoma",
           "zones": [
             "America/Chicago"
@@ -9314,13 +9385,13 @@
             }
           }
         },
-        "or": {
+        "OR": {
           "name": "Oregon",
           "zones": [
             "America/Los_Angeles"
           ]
         },
-        "pa": {
+        "PA": {
           "name": "Pennsylvania",
           "zones": [
             "America/New_York"
@@ -9333,7 +9404,7 @@
             }
           }
         },
-        "ri": {
+        "RI": {
           "name": "Rhode Island",
           "zones": [
             "America/New_York"
@@ -9346,7 +9417,7 @@
             }
           }
         },
-        "sc": {
+        "SC": {
           "name": "South Carolina",
           "zones": [
             "America/New_York"
@@ -9362,14 +9433,14 @@
             }
           }
         },
-        "sd": {
+        "SD": {
           "name": "South Dakota",
           "zones": [
             "America/Chicago",
             "America/Denver"
           ]
         },
-        "tn": {
+        "TN": {
           "name": "Tennessee",
           "zones": [
             "America/Chicago",
@@ -9384,7 +9455,7 @@
             }
           }
         },
-        "tx": {
+        "TX": {
           "name": "Texas",
           "zones": [
             "America/Chicago",
@@ -9452,7 +9523,7 @@
             }
           }
         },
-        "ut": {
+        "UT": {
           "name": "Utah",
           "zones": [
             "America/Denver"
@@ -9465,7 +9536,7 @@
             }
           }
         },
-        "vt": {
+        "VT": {
           "name": "Vermont",
           "zones": [
             "America/New_York"
@@ -9483,7 +9554,7 @@
             }
           }
         },
-        "va": {
+        "VA": {
           "name": "Virginia",
           "zones": [
             "America/New_York"
@@ -9496,13 +9567,13 @@
             }
           }
         },
-        "wa": {
+        "WA": {
           "name": "Washington",
           "zones": [
             "America/Los_Angeles"
           ]
         },
-        "wv": {
+        "WV": {
           "name": "West Virginia",
           "zones": [
             "America/New_York"
@@ -9525,7 +9596,7 @@
             }
           }
         },
-        "wi": {
+        "WI": {
           "name": "Wisconsin",
           "zones": [
             "America/Chicago"
@@ -9548,7 +9619,7 @@
             }
           }
         },
-        "wy": {
+        "WY": {
           "name": "Wyoming",
           "zones": [
             "America/Denver"

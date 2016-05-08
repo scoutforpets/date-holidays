@@ -217,9 +217,9 @@ Data.splitName = function (country, state, region) {
     return country
   }
   var o = {}
-  var a = country.split('.')
+  var a = country.split(/[.-]/)
   o.country = a.shift().toUpperCase()
-  o.state = a.shift() || state
-  o.region = a.shift() || region
+  o.state = (a.shift() || state || '').toUpperCase()
+  o.region = (a.shift() || region || '').toUpperCase()
   return o
 }

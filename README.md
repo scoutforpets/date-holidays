@@ -9,7 +9,7 @@ This module provides dates of holidays for various countries, states and regions
 
 The features are:
 
-- calculation of public, bank and observance holidays for different countries, state, region
+- calculation of public, bank and observance holidays for different countries, state, region, following ISO 3166-2
 - consideration of timezones for holiday checks
 - substitute days
 - multi-language support for all holiday names
@@ -46,39 +46,39 @@ If you are missing holidays from your country, state, region please consider [co
 <!-- !tree -->
 
 ```
-Countries: 90
+Countries: 93
 ├── AD: Andorra
-│   └── vella: Andorra la Vella
+│   └── 07: Andorra la Vella
 ├── AO: Angola
 ├── AM: Հայաստան
 ├── AR: Argentina
 ├── AT: Österreich
-│   ├── b: Burgenland
-│   ├── k: Kärnten
-│   ├── n: Niederösterreich
-│   ├── o: Oberösterreich
-│   ├── s: Land Salzburg
-│   ├── st: Steiermark
-│   ├── t: Tirol
-│   ├── v: Vorarlberg
-│   └── w: Wien
+│   ├── 1: Burgenland
+│   ├── 2: Kärnten
+│   ├── 3: Niederösterreich
+│   ├── 4: Oberösterreich
+│   ├── 5: Land Salzburg
+│   ├── 6: Steiermark
+│   ├── 7: Tirol
+│   ├── 8: Vorarlberg
+│   └── 9: Wien
 ├── AU: Australia
-│   ├── act: Australian Capital Territory
-│   ├── nsw: New South Wales
-│   ├── nt: Northern Territory
-│   ├── qld: Queensland
-│   ├── sa: South Australia
-│   ├── tas: Tasmania
-│   │   ├── h: Hobart
-│   │   └── nh: Non-Hobart
-│   ├── vic: Victoria
-│   │   └── m: Melbourne
-│   └── wa: Western Australia
+│   ├── ACT: Australian Capital Territory
+│   ├── NSW: New South Wales
+│   ├── NT: Northern Territory
+│   ├── QLD: Queensland
+│   ├── SA: South Australia
+│   ├── TAS: Tasmania
+│   │   ├── H: Hobart
+│   │   └── NH: Non-Hobart
+│   ├── VIC: Victoria
+│   │   └── M: Melbourne
+│   └── WA: Western Australia
 ├── BE: Belgique
-│   ├── de: Deutschsprachige Gemeinschaft
-│   ├── fr: Communauté française
-│   │   └── br: Bruxelles
-│   └── vl: Vlaamse Gemeenschap
+│   ├── BRU: Bruxelles
+│   ├── DE: Deutschsprachige Gemeinschaft
+│   ├── VLG: Vlaamse Gemeenschap
+│   └── WAL: Communauté française
 ├── BG: България
 ├── BI: République du Burundi
 ├── BO: Bolivia
@@ -90,37 +90,37 @@ Countries: 90
 ├── CD: République démocratique du Congo
 ├── CF: République centrafricaine
 ├── CH: Schweiz
-│   ├── zh: Kanton Zürich
-│   ├── be: Kanton Bern
-│   ├── lu: Kanton Luzern
-│   ├── ur: Kanton Uri
-│   ├── sz: Kanton Schwyz
-│   ├── ow: Kanton Obwalden
-│   ├── nw: Kanton Nidwalden
-│   ├── gl: Kanton Glarus
-│   ├── zg: Kanton Zug
-│   ├── fr: Kanton Freiburg
-│   ├── so: Kanton Solothurn
-│   ├── bs: Kanton Basel-Stadt
-│   ├── bl: Kanton Basel-Landschaft
-│   ├── sh: Kanton Schaffhausen
-│   ├── ar: Kanton Appenzell Ausserrhoden
-│   ├── ai: Kanton Appenzell Innerrhoden
-│   ├── sg: Kanton St. Gallen
-│   ├── gr: Kanton Graubünden
-│   ├── ag: Kanton Aargau
-│   ├── tg: Kanton Thurgau
-│   ├── ti: Kanton Tessin
-│   ├── vd: Kanton Waadt
-│   ├── vs: Kanton Wallis
-│   ├── ne: Kanton Neuenburg
-│   ├── ge: Kanton Genf
-│   └── ju: Kanton Jura
+│   ├── ZH: Kanton Zürich
+│   ├── BE: Kanton Bern
+│   ├── LU: Kanton Luzern
+│   ├── UR: Kanton Uri
+│   ├── SZ: Kanton Schwyz
+│   ├── OW: Kanton Obwalden
+│   ├── NW: Kanton Nidwalden
+│   ├── GL: Kanton Glarus
+│   ├── ZG: Kanton Zug
+│   ├── FR: Kanton Freiburg
+│   ├── SO: Kanton Solothurn
+│   ├── BS: Kanton Basel-Stadt
+│   ├── BL: Kanton Basel-Landschaft
+│   ├── SH: Kanton Schaffhausen
+│   ├── AR: Kanton Appenzell Ausserrhoden
+│   ├── AI: Kanton Appenzell Innerrhoden
+│   ├── SG: Kanton St. Gallen
+│   ├── GR: Kanton Graubünden
+│   ├── AG: Kanton Aargau
+│   ├── TG: Kanton Thurgau
+│   ├── TI: Kanton Tessin
+│   ├── VD: Kanton Waadt
+│   ├── VS: Kanton Wallis
+│   ├── NE: Kanton Neuenburg
+│   ├── GE: Kanton Genf
+│   └── JU: Kanton Jura
 ├── CL: Chile
-│   ├── ar: Arica
-│   ├── ch: Chillán y Chillán Viejo
-│   ├── pa: Parinacota
-│   └── ta: Tarapacá
+│   ├── AP: Arica y Parinacota
+│   ├── BI: Biobío
+│   │   └── CH: Chillán y Chillán Viejo
+│   └── TA: Tarapacá
 ├── CG: République du Congo
 ├── CM: Cameroun
 ├── CO: Colombia
@@ -130,64 +130,67 @@ Countries: 90
 ├── CZ: Česká republika
 ├── DK: Danmark
 ├── DE: Deutschland
-│   ├── bb: Brandenburg
-│   ├── bw: Baden Würtemberg
-│   ├── by: Bayern
-│   │   └── a: Stadt Augsburg
-│   ├── hb: Hansestadt Bremen
-│   ├── he: Hessen
-│   ├── hh: Hansestadt Hamburg
-│   ├── mv: Mecklenburg Vorpommern
-│   ├── ni: Niedersachsen
-│   ├── nw: Nordrhein-Westfalen
-│   ├── rp: Rheinland-Pfalz
-│   ├── sh: Schleswig-Holstein
-│   ├── sl: Saarland
-│   ├── sn: Sachsen
-│   ├── st: Sachsen-Anhalt
-│   └── th: Thüringen
+│   ├── BB: Brandenburg
+│   ├── BW: Baden Würtemberg
+│   ├── BY: Bayern
+│   │   └── A: Stadt Augsburg
+│   ├── HB: Hansestadt Bremen
+│   ├── HE: Hessen
+│   ├── HH: Hansestadt Hamburg
+│   ├── MV: Mecklenburg Vorpommern
+│   ├── NI: Niedersachsen
+│   ├── NW: Nordrhein-Westfalen
+│   ├── RP: Rheinland-Pfalz
+│   ├── SH: Schleswig-Holstein
+│   ├── SL: Saarland
+│   ├── SN: Sachsen
+│   ├── ST: Sachsen-Anhalt
+│   └── TH: Thüringen
 ├── DO: República Dominicana
 ├── EC: Ecuador
-│   └── qu: Quito
+│   └── P: Pichincha
+│       └── QU: Quito
 ├── EE: Eesti
 ├── ES: España
-│   └── madrid: Comunidad de Madrid
+│   └── MD: Comunidad de Madrid
 ├── ET: ኢትዮጵያ
 ├── FI: Suomi
 ├── FR: France
-│   ├── basrhin: Département Bas-Rhin
-│   ├── hautrhin: Département Haut-Rhin
-│   ├── moselle: Département Moselle
-│   ├── mayotte: Département et région d'outre-mer Mayotte
-│   ├── martinique: Département et région d'outre-mer Martinique
-│   ├── guadeloupe: Département et région d'outre-mer Guadeloupe
-│   ├── guyane: Département et région d'outre-mer Guyane
-│   └── reunion: Département et région d'outre-mer La Réunion
+│   ├── A: Alsace
+│   │   ├── 67: Département Bas-Rhin
+│   │   └── 68: Département Haut-Rhin
+│   ├── M: Lorraine
+│   │   └── 57: Département Moselle
+│   ├── YT: Département et région d'outre-mer Mayotte
+│   ├── MQ: Département et région d'outre-mer Martinique
+│   ├── GP: Département et région d'outre-mer Guadeloupe
+│   ├── GF: Département et région d'outre-mer Guyane
+│   └── RE: Département et région d'outre-mer La Réunion
 ├── GA: Gabon
-├── GB: Britain
-│   ├── al: Alderney
-│   ├── en: England
-│   ├── gu: Guernsey
-│   ├── im: Isle of Man
-│   ├── je: Jersey
-│   ├── ni: Northern Ireland
-│   ├── sc: Scottland
-│   └── wa: Wales
+├── GB: United Kingdom
+│   ├── ALD: Alderney
+│   ├── ENG: England
+│   ├── NIR: Northern Ireland
+│   ├── SCT: Scottland
+│   └── WLS: Wales
 ├── GD: Grenada
+├── GG: Guernsey
 ├── GR: Ελλάδα
 ├── GQ: República de Guinea Ecuatorial
 ├── GT: Guatemala
 ├── GU: Guam
 ├── HN: Honduras
 ├── HR: Hrvatska
-│   ├── split: Split
-│   └── dubrovnik: Dubrovnik
+│   ├── 17: Split-Dalmatia
+│   └── 19: Dubrovnik-Neretva
 ├── HT: Haïti
 ├── HU: Magyarország
 ├── IE: Ireland
+├── IM: Isle of Man
 ├── IT: Italia
-│   └── suedtirol: Südtirol, Alto Adige
+│   └── 32: Südtirol, Alto Adige
 ├── IS: Ísland
+├── JE: Jersey
 ├── JM: Jamaica
 ├── JP: 日本
 ├── KE: KE
@@ -207,22 +210,22 @@ Countries: 90
 ├── NL: Nederland
 ├── NO: Norge
 ├── NZ: New Zealand
-│   ├── au: Auckland Province
-│   ├── ca: Canterbury
-│   ├── ch: Chatham Islands
-│   ├── ha: Hawke's Bay
-│   ├── ma: Marlborough
-│   ├── ne: Nelson
-│   ├── no: Northland
-│   ├── ot: Otago Province
-│   ├── sc: South Canterbury
-│   ├── so: Southland
-│   ├── ta: Taranaki
-│   ├── we: Wellington Province
-│   └── wd: Westland
+│   ├── AUK: Auckland Province
+│   ├── CAN: Canterbury
+│   │   └── S: South Canterbury
+│   ├── CIT: Chatham Islands
+│   ├── HKB: Hawke's Bay
+│   ├── MBH: Marlborough
+│   ├── NSN: Nelson
+│   ├── NTL: Northland
+│   ├── OTA: Otago Province
+│   ├── STL: Southland
+│   ├── TKI: Taranaki
+│   ├── WGN: Wellington Province
+│   └── WTC: Westland
 ├── PA: Panamá
 ├── PE: Perú
-│   └── cu: Cuzco
+│   └── CUS: Cuzco
 ├── PL: Polska
 ├── PT: Portugal
 ├── PY: Paraguay
@@ -234,73 +237,73 @@ Countries: 90
 │   └── som: Somaliland
 ├── SS: South Sudan
 ├── SV: El Salvador
-│   └── san: San Salvador
+│   └── SS: San Salvador
 ├── TG: République togolaise
 ├── TR: Türkiye
 ├── TZ: Tanzania
 ├── VE: Venezuela
-│   ├── an: Anzoátegui
-│   ├── ca: Carabobo
-│   ├── la: Lara
-│   │   └── ba: Barquisimeto
-│   ├── mi: Miranda
-│   ├── mo: Monagas
-│   ├── ta: Táchira
-│   └── zu: Zulia
+│   ├── B: Anzoátegui
+│   ├── G: Carabobo
+│   ├── K: Lara
+│   │   └── BA: Barquisimeto
+│   ├── M: Miranda
+│   ├── N: Monagas
+│   ├── S: Táchira
+│   └── V: Zulia
 ├── UG: Uganda
 ├── US: United States of America
-│   ├── al: Alabama
-│   ├── ak: Alaska
-│   ├── az: Arizona
-│   ├── ar: Arkansas
-│   ├── ca: California
-│   ├── co: Colorado
-│   ├── ct: Connecticut
-│   ├── de: Delaware
-│   ├── dc: District of Columbia
-│   ├── fl: Florida
-│   ├── ga: Georgia
-│   ├── hi: Hawaii
-│   ├── id: Idaho
-│   ├── il: Illinois
-│   ├── in: Indiana
-│   ├── ia: Iowa
-│   ├── ks: Kansas
-│   ├── ky: Kentucky
-│   ├── la: Louisiana
-│   │   └── no: New Orleans
-│   ├── me: Maine
-│   ├── md: Maryland
-│   ├── ma: Massachusetts
-│   ├── mi: Michigan
-│   ├── mn: Minnesota
-│   ├── ms: Mississippi
-│   ├── mo: Missouri
-│   ├── mt: Montana
-│   ├── ne: Nebraska
-│   ├── nv: Nevada
-│   ├── nh: New Hampshire
-│   ├── nj: New Jersey
-│   ├── nm: New Mexico
-│   ├── ny: New York
-│   ├── nc: North Carolina
-│   ├── nd: North Dakota
-│   ├── oh: Ohio
-│   ├── ok: Oklahoma
-│   ├── or: Oregon
-│   ├── pa: Pennsylvania
-│   ├── ri: Rhode Island
-│   ├── sc: South Carolina
-│   ├── sd: South Dakota
-│   ├── tn: Tennessee
-│   ├── tx: Texas
-│   ├── ut: Utah
-│   ├── vt: Vermont
-│   ├── va: Virginia
-│   ├── wa: Washington
-│   ├── wv: West Virginia
-│   ├── wi: Wisconsin
-│   └── wy: Wyoming
+│   ├── AL: Alabama
+│   ├── AK: Alaska
+│   ├── AZ: Arizona
+│   ├── AR: Arkansas
+│   ├── CA: California
+│   ├── CO: Colorado
+│   ├── CT: Connecticut
+│   ├── DE: Delaware
+│   ├── DC: District of Columbia
+│   ├── FL: Florida
+│   ├── GA: Georgia
+│   ├── HI: Hawaii
+│   ├── ID: Idaho
+│   ├── IL: Illinois
+│   ├── IN: Indiana
+│   ├── IA: Iowa
+│   ├── KS: Kansas
+│   ├── KY: Kentucky
+│   ├── LA: Louisiana
+│   │   └── NO: New Orleans
+│   ├── ME: Maine
+│   ├── MD: Maryland
+│   ├── MA: Massachusetts
+│   ├── MI: Michigan
+│   ├── MN: Minnesota
+│   ├── MS: Mississippi
+│   ├── MO: Missouri
+│   ├── MT: Montana
+│   ├── NE: Nebraska
+│   ├── NV: Nevada
+│   ├── NH: New Hampshire
+│   ├── NJ: New Jersey
+│   ├── NM: New Mexico
+│   ├── NY: New York
+│   ├── NC: North Carolina
+│   ├── ND: North Dakota
+│   ├── OH: Ohio
+│   ├── OK: Oklahoma
+│   ├── OR: Oregon
+│   ├── PA: Pennsylvania
+│   ├── RI: Rhode Island
+│   ├── SC: South Carolina
+│   ├── SD: South Dakota
+│   ├── TN: Tennessee
+│   ├── TX: Texas
+│   ├── UT: Utah
+│   ├── VT: Vermont
+│   ├── VA: Virginia
+│   ├── WA: Washington
+│   ├── WV: West Virginia
+│   ├── WI: Wisconsin
+│   └── WY: Wyoming
 ├── UY: Uruguay
 ├── ZA: South Africa
 ├── ZM: Zambia
@@ -325,21 +328,21 @@ hd.getCountries()
 // get supported states e.g. for US
 hd.getStates('US')
 /*>
-{ al: 'Alabama',
+{ AL: 'Alabama',
   ...
-  wy: 'Wyoming' }
+  WY: 'Wyoming' }
 */
 
 // get supported regions e.g. for US, Lousiana
-hd.getRegions('US', 'la')
+hd.getRegions('US', 'LA')
 /*>
-{ no: 'New Orleans' }
+{ NO: 'New Orleans' }
 */
 
 // initialize holidays for US, Lousiana, New Orleans
-hd.init('US', 'la', 'no')
+hd.init('US', 'LA', 'NO')
 // or using a new instance
-hd = new Holidays('US', 'la', 'no')
+hd = new Holidays('US', 'LA', 'NO')
 
 // get all holidays for the year 2016
 hd.getHolidays(2016)

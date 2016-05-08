@@ -20,29 +20,29 @@ describe('#Holidays', function () {
       var hd = new Holidays()
       var res = hd.getStates('de')
       var exp = {
-        bb: 'Brandenburg',
-        bw: 'Baden Würtemberg',
-        by: 'Bayern',
-        hb: 'Hansestadt Bremen',
-        he: 'Hessen',
-        hh: 'Hansestadt Hamburg',
-        mv: 'Mecklenburg Vorpommern',
-        ni: 'Niedersachsen',
-        nw: 'Nordrhein-Westfalen',
-        rp: 'Rheinland-Pfalz',
-        sh: 'Schleswig-Holstein',
-        sl: 'Saarland',
-        sn: 'Sachsen',
-        st: 'Sachsen-Anhalt',
-        th: 'Thüringen'
+        BB: 'Brandenburg',
+        BW: 'Baden Würtemberg',
+        BY: 'Bayern',
+        HB: 'Hansestadt Bremen',
+        HE: 'Hessen',
+        HH: 'Hansestadt Hamburg',
+        MV: 'Mecklenburg Vorpommern',
+        NI: 'Niedersachsen',
+        NW: 'Nordrhein-Westfalen',
+        RP: 'Rheinland-Pfalz',
+        SH: 'Schleswig-Holstein',
+        SL: 'Saarland',
+        SN: 'Sachsen',
+        ST: 'Sachsen-Anhalt',
+        TH: 'Thüringen'
       }
       assert.deepEqual(res, exp)
     })
 
     it('for regions', function () {
       var hd = new Holidays()
-      var res = hd.getRegions('de', 'by')
-      var exp = { a: 'Stadt Augsburg' }
+      var res = hd.getRegions('DE', 'BY')
+      var exp = { A: 'Stadt Augsburg' }
       assert.deepEqual(res, exp)
     })
 
@@ -130,22 +130,21 @@ describe('#Holidays', function () {
       var hd = new Holidays()
       var res = hd.query('AT')
       assert.ok(typeof res === 'object')
-      assert.equal(res.b, 'Burgenland')
+      assert.equal(res['1'], 'Burgenland')
     })
 
-    it('for all regions of DE by', function () {
+    it('for all regions of DE BY', function () {
       var hd = new Holidays()
-      var res = hd.query('DE', 'by')
+      var res = hd.query('DE', 'BY')
       assert.ok(typeof res === 'object')
-      assert.equal(res.a, 'Stadt Augsburg')
+      assert.equal(res.A, 'Stadt Augsburg')
     })
 
-    it('for all regions of DE.by', function () {
+    it('for all regions of de-', function () {
       var hd = new Holidays()
-      var res = hd.query('DE.by')
+      var res = hd.query('de-by')
       assert.ok(typeof res === 'object')
-      console.log(res)
-      assert.equal(res.a, 'Stadt Augsburg')
+      assert.equal(res.A, 'Stadt Augsburg')
     })
   })
 
