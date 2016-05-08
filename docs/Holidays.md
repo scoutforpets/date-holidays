@@ -82,18 +82,6 @@ check whether `date` is a holiday or not
 {String} type - type of holiday `public|bank|school|observance`
 ```
 
-### Holidays.moveToTimezone(date, timezone) 
-
-move `date` into a different `timezone`
-
-**Parameters**
-
-**date**: `Date`, date to move
-
-**timezone**: `String`, timezone from `moment-timezone`, if omitted initially set timezone is used
-
-**Returns**: `Date`, moved date
-
 ### Holidays.query(country, state) 
 
 Query for available Countries, States, Regions

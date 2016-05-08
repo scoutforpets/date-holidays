@@ -1,6 +1,6 @@
 # Specification for `holidays.yaml`
 
-Version: 0.1.0
+Version: 1.0.0-0
 
 This document describes the data contained within the files `holidays.yaml` and
 `names.yaml`.
@@ -64,12 +64,12 @@ holidays:
     days:               # see days structure
       ...
     states:             # (optional) specify special holidays per state
-      <state_code_1>:   # short code of state
+      <state_code_1>:   # short code of state (ISO 3166-2)
         name: {String}  # name of state in local language of country
         days:           # see days structure
           ...
         regions:        # (optional) specify special holidays per region
-          <region_code_1>:  # short code of region
+          <region_code_1>:  # short code of region (ISO 3166-2 if applicable)
             name: {String}  # name of region in local language
             days:       # see days structure
               ...
@@ -134,6 +134,14 @@ A fix day for a given year is attributed with `YYYY-MM-DD`.
 - `01-01` is January first
 - `12-11` is December 11th
 - `'2015-10-09'` is October 9th of 2015 (Enclose such date in quotes as otherwise it will be expanded to an ISO date by js-yaml)
+
+### Fixed Date at beginning of a Month
+
+Rule: `(January|February|March|April|May|June|July|August|September|October|November|December)`
+
+**Examples**
+
+- `February` equals to `02-01`
 
 ### Movable Date
 
@@ -234,7 +242,7 @@ Rule: `MM-DD HH:MM if weekday then HH:MM`
 
 A holiday may change to a weekday starting from a given fixed Date.
 
-Rule: `count weekday after|before MM-DD`
+Rule: `<count> <weekday> (after|before) MM-DD`
 
 "after" means the same day and after
 
@@ -247,6 +255,24 @@ Rule: `count weekday after|before MM-DD`
 - `2nd sunday after 05-01` is the 2nd sunday in May
 - `4th thursday after 11-01` is the 4th thursday in November
 - `sunday before 10-01` is the last sunday in September
+
+### Changes to different weekday from a given Month
+
+A holiday may change to a weekday starting from the first day of a month.
+
+Rule: `<count> <weekday> (before|in) <month>`
+
+"in" means the same day and after
+
+"before" means all days before but not the same day
+
+**Examples**:
+
+- `1st monday in February` is the monday after February 1st or February 1st if this day is a monday
+- `monday before February` is the monday before February 1st but can never be February 1st
+- `2nd sunday in May` is the 2nd sunday in May
+- `4th thursday in November` is the 4th thursday in November
+- `sunday before October` is the last sunday in September
 
 ### Change to a different weekday from a changed fixed Date
 
@@ -324,7 +350,7 @@ Rule: `<date> if MM-DD (and MM-DD)? is (<type>)? holiday`
 
 On any rule it is possible to disable it for a given date. For every year an entry can be applied to the list.
 
-E.g. in case that the 4th Monday in November is the 2015-11-23 then the day will not be an holiday.
+E.g. in case that the 4th Monday in November is the 2015-11-23 then the day will not be a holiday.
 
 ```
 days:
@@ -343,7 +369,7 @@ E.g. in case that the 4th Monday in November is the 2015-11-23 then the day gets
 
 ```
 days:
-  4th monday after 11-01:
+  4th monday in November:
     disable:
       - '2015-11-23'
     enable:
