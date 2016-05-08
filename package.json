@@ -9,7 +9,7 @@
   "scripts": {
     "test": "mocha test/*.mocha.js",
     "pack": "npm run yaml && npm run lint && npm test && npm pack",
-    "yaml": "node build/yaml2json.js",
+    "yaml": "node scripts/yaml2json.js",
     "cover": "istanbul cover _mocha --report lcov --report text -- -R dot --check-leaks test/*.mocha.js",
     "lint": "eslint --cache --quiet '**/*.js'",
     "watch": "watch-run -p data/*.yaml npm run yaml & babel --watch -d lib src",
