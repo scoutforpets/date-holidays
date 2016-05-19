@@ -1,7 +1,7 @@
 'use strict'
 
 const CalEvent = require('./CalEvent')
-const CalDate = require('./CalDate')
+const CalDate = require('caldate')
 
 /**
  * Mapper class for mapped calenders like hijri and hebrew

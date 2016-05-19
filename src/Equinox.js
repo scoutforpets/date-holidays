@@ -4,7 +4,7 @@ const moonbeams = require('moonbeams')
 const moment = require('moment-timezone')
 const pad0 = require('./internal/utils').pad0
 const CalEvent = require('./CalEvent')
-const CalDate = require('./CalDate')
+const CalDate = require('caldate')
 
 const SEASON = {
   spring: 0,

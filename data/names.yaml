@@ -45,6 +45,7 @@ names:
       sv: Nyårsdagen
       sw: Mwaka mpya
       tr: Yılbaşı
+      zh: 元旦
   01-06:
     name:
       en: Epiphany
@@ -117,6 +118,7 @@ names:
       ro: Ziua muncii
       sr: Празник рада
       sv: Första Maj
+      zh: 劳动节
   06-29:
     name:
       en: Saint Peter and Saint Paul

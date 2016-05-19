@@ -140,14 +140,14 @@ describe('#CalEvent', function () {
   it('can compare with other event', function () {
     var date = new CalEvent({year: 2015, month: 12, day: 3}).inYear(2015)
     var comp = new CalEvent(new Date('2015-12-03 12:00:00')).inYear(2015)
-    var res = date.isEqual(comp)
+    var res = date.isEqualDate(comp)
     assert.strictEqual(res, true)
   })
 
   it('can compare with other event of different date', function () {
     var date = new CalEvent({year: 2015, month: 12, day: 4}).inYear(2015)
     var comp = new CalEvent(new Date('2015-12-03 12:00:00')).inYear(2015)
-    var res = date.isEqual(comp)
+    var res = date.isEqualDate(comp)
     assert.strictEqual(res, false)
   })
 })

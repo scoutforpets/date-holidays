@@ -4,7 +4,7 @@
 
 'use strict'
 
-const CalDate = require('./CalDate')
+const CalDate = require('caldate')
 const DAYS = require('./internal/utils').DAYS
 
 class Rule {

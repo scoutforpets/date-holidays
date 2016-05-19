@@ -1,7 +1,7 @@
 'use strict'
 
 const isDate = require('./internal/utils').isDate
-const CalDate = require('./CalDate')
+const CalDate = require('caldate')
 
 class CalEvent {
   constructor (opts) {
@@ -28,11 +28,11 @@ class CalEvent {
     this.dates = []
   }
 
-  isEqual (calEvent) {
+  isEqualDate (calEvent) {
     var res = false
     for (var thisDate of this.dates) {
       for (var date of calEvent.dates) {
-        res |= thisDate.isEqual(date)
+        res |= thisDate.isEqualDate(date)
       }
     }
     return !!res

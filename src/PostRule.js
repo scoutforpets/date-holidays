@@ -58,8 +58,8 @@ class PostRule {
         let tmpEvType = _.get(tmpEv, 'opts.type') || 'public'
         for (var i = 1; i < this.events.length; i++) {
           if (found[i]) continue
-          let isEqual = tmpEv.event.isEqual(this.events[i])
-          if (isEqual && tmpEvType === type) {
+          let isEqualDate = tmpEv.event.isEqualDate(this.events[i])
+          if (isEqualDate && tmpEvType === type) {
             found[i] = true
           }
         }
@@ -78,7 +78,7 @@ class PostRule {
     var ev = this.events[0]
     var tmpEv = this._findEventInYear(year, this.opts.disable)
     if (tmpEv) {
-      if (tmpEv.isEqual(ev)) {
+      if (tmpEv.isEqualDate(ev)) {
         ev.reset()
         tmpEv = this._findEventInYear(year, this.opts.enable)
         if (tmpEv) this.events[0] = tmpEv

@@ -37,7 +37,7 @@ exports.isDate = function isDate (d) {
  */
 exports.pad0 = function pad0 (number, len) {
   len = len || 2
-  number = Array(len).join('0') + number
+  number = Array(len).join('0') + number.toString()
   return number.substr(number.length - len, len)
 }
 

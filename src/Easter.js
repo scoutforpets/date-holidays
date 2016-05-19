@@ -2,7 +2,7 @@
 
 const easter = require('date-easter')
 const CalEvent = require('./CalEvent')
-const CalDate = require('./CalDate')
+const CalDate = require('caldate')
 
 class Easter extends CalEvent {
   /**
